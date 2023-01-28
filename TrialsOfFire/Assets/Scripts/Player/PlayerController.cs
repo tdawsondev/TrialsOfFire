@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed;
     public float dashDelay = 0.5f;
     private Vector3 moveDirection;
+    KeyValuePair<AK.Wwise.Event, GameObject> footsteps;
+    bool footstepsIsPlaying;
+    public float footstepsTime;
+    Coroutine footstepsCall;
 
 
 
@@ -42,6 +46,7 @@ public class PlayerController : MonoBehaviour
         moveDirection = move;
 
         mageCharacter.Move(move * speed * Time.deltaTime);
+        CheckPlaySound();
         transform.Rotate(0f, mouse_x, 0f);
         eyes.transform.Rotate(-mouse_y, 0f, 0f);
 
@@ -66,5 +71,36 @@ public class PlayerController : MonoBehaviour
             timer += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
+    }
+
+    void CheckPlaySound()
+    {
+        if(mageCharacter.velocity.magnitude > 0f)
+        {
+            if (!footstepsIsPlaying)
+            {
+                footstepsIsPlaying = true;
+                footstepsCall = StartCoroutine(FootStepLoop());
+            }
+            
+        }
+        else if(footstepsIsPlaying)
+        {
+            StopCoroutine(footstepsCall);
+            footstepsIsPlaying = false;
+        }
+    }
+    IEnumerator FootStepLoop()
+    {
+        while (true)
+        {
+            if (!mageCharacter.isGrounded)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            AudioManager.instance.Play("Foot Steps");
+            yield return new WaitForSeconds(footstepsTime);
+        }
+        
     }
 }

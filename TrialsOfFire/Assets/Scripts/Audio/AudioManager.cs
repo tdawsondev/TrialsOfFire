@@ -34,21 +34,26 @@ public class AudioManager : MonoBehaviour
     {
     }
 
-    public void Play(string soundName, GameObject otherObject = null)
+    public KeyValuePair<AK.Wwise.Event, GameObject> Play(string soundName, GameObject otherObject = null)
     {
         Sound s = sounds.Find(i => i.soundName == soundName);
+        KeyValuePair<AK.Wwise.Event, GameObject> result = new KeyValuePair<AK.Wwise.Event,GameObject>();
         if(s == null)
         {
             Debug.LogWarning("Sound " + soundName + " not Found.");
-            return;
+            return result;
         }
         if (otherObject != null)
         {
             s.soundEvent.Post(otherObject);
+            result = new KeyValuePair<AK.Wwise.Event, GameObject>(s.soundEvent, otherObject);
+            return result;
         }
         else
         {
             s.soundEvent.Post(Player.Instance.gameObject);
+            result = new KeyValuePair<AK.Wwise.Event, GameObject>(s.soundEvent, Player.Instance.gameObject);
+            return result;
         }
     }
 
