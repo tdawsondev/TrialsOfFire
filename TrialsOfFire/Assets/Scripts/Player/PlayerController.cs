@@ -37,12 +37,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("Is Grounded: " + mageCharacter.isGrounded);
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         float mouse_x = Input.GetAxis("Mouse X");
 		float mouse_y = Input.GetAxis("Mouse Y");
 
 		Vector3 move = transform.forward * vertical + transform.right * horizontal;
+        if(!mageCharacter.isGrounded)
+            move.y += -98f * Time.deltaTime;
+
+/*        if (Input.GetKeyDown(KeyCode.Space) && mageCharacter.isGrounded)
+            move.y = 20f;*/
         moveDirection = move;
 
         mageCharacter.Move(move * speed * Time.deltaTime);
