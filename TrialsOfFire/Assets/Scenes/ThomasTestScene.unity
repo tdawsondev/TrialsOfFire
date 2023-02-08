@@ -1885,11 +1885,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6445763493633234552, guid: 16363bed128430440b167e90d5e941dc,
-        type: 3}
-      propertyPath: footstepsTime
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6445763493633234555, guid: 16363bed128430440b167e90d5e941dc,
         type: 3}
       propertyPath: m_Name
@@ -4861,6 +4856,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1927690788033874206, guid: 1ee4cffb41d7f534084bd8ddd8c10d22,
         type: 3}
+      propertyPath: sounds.Array.data[1].soundName
+      value: Foot Steps
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927690788033874206, guid: 1ee4cffb41d7f534084bd8ddd8c10d22,
+        type: 3}
       propertyPath: sounds.Array.data[2].soundName
       value: Foot Steps
       objectReference: {fileID: 0}
@@ -4868,7 +4868,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[1].soundEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 9c75d5d8045d9f245a8d703b3e15d8dd,
+      objectReference: {fileID: 11400000, guid: f51d366e422793c46b867ec2d20d529a,
         type: 2}
     - target: {fileID: 1927690788033874206, guid: 1ee4cffb41d7f534084bd8ddd8c10d22,
         type: 3}
