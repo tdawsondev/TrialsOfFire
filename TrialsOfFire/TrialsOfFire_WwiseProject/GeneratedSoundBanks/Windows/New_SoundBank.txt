@@ -1,16 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1039124969	Play_light_fire			\Default Work Unit\Play_light_fire	
+	1139882387	Play_Combat_Playlist			\Default Work Unit\Play_Combat_Playlist	
 	2340775150	Play_SFX_spell_cast			\Default Work Unit\Play_SFX_spell_cast	
 	2545938451	Play_Footsteps_random			\Default Work Unit\Play_Footsteps_random	
+	3118224692	Play_Menu_Music_Playlist			\Default Work Unit\Play_Menu_Music_Playlist	
+	3158438924	Play_Explore_Playlist			\Default Work Unit\Play_Explore_Playlist	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1416967478	All_Buttons_IN	Wwise Compressor			
 	2038996943	Plate_Sizzle	Wwise RoomVerb			
+	3164629247	Holy	Wwise RoomVerb			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6346227	185 Bass STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\185 Bass STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\185 Bass STEM		7275888
+	25459817	181 Woodwinds STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\181 Woodwinds STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\181 Woodwinds STEM		7275888
 	84612645	footstep_5	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_5		74632
 	174776349	footstep_4	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_4		74632
 	244977777	SFX_spell_cast	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\SFX_spell_cast_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_spell_cast		344824
 	367317632	footstep_6	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_6		74632
+	385204008	180 Drums intense STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\180 Drums intense STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\180 Drums intense STEM		7275888
+	407614234	188 Emotional Stack STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\188 Emotional Stack STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\188 Emotional Stack STEM		7275888
+	514870237	184 Strings STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\184 Strings STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\184 Strings STEM		7275888
 	560081505	footstep_1	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_1		74632
 	599553398	footstep_3	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_3		74632
+	636407208	190 Menu Music STEM 152 bpm	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\190 Menu Music STEM 152 bpm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu Music Playlist\Menu Music\190 Menu Music STEM 152 bpm		4850624
+	666072819	184 MOOG LEAD 2 STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\184 MOOG LEAD 2 STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\184 MOOG LEAD 2 STEM		7275888
+	712757521	light_fire	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\light_fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\light_fire		714208
+	741307772	189 MOOG LEAD STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\189 MOOG LEAD STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\189 MOOG LEAD STEM		7275888
+	790201985	186 Choir STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\186 Choir STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\186 Choir STEM		7275888
+	849014329	182 Strings STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\182 Strings STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\182 Strings STEM		7275888
+	885257404	183 Pad STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\183 Pad STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\183 Pad STEM		7275888
+	886936071	179 Drums Tension STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\179 Drums Tension STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Variation\179 Drums Tension STEM		7275888
+	891899391	178 Brass STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Combat\178 Brass STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Combat Playlist\Combat Main\178 Brass STEM		7275888
 	1018981790	footstep_2	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_2		74632
 

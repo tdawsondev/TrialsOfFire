@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80f0961343b1c44e800d62cd736ae70b
     GuidInternal: 
-    m_lastTime: -8585266818294209044
+    m_lastTime: -8585259199240345652
     List:
     - name: New_SoundBank
       guid: dd52f5b6b6a5cd48adda31fa2bd70bc1
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9caba23ad7acf04685deead09ad7b08e
     GuidInternal: 
-    m_lastTime: -8585266818424067406
+    m_lastTime: -8585259199240280432
     List:
+    - name: Play_Combat_Playlist
+      guid: cccc91b5840eeb42bda6dc53461a009e
+      id: 1139882387
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_Combat_Playlist
+        ObjectType: 3
+        guid: cccc91b5840eeb42bda6dc53461a009e
+      Path: Events\Default Work Unit\Play_Combat_Playlist
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Explore_Playlist
+      guid: 44a5e16b71c7c442978b514ff8e2796a
+      id: 3158438924
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_Explore_Playlist
+        ObjectType: 3
+        guid: 44a5e16b71c7c442978b514ff8e2796a
+      Path: Events\Default Work Unit\Play_Explore_Playlist
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps_random
       guid: e4a51c7cdae2e44a99e3b22043b60d3e
       id: 2545938451
@@ -110,6 +144,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: e4a51c7cdae2e44a99e3b22043b60d3e
       Path: Events\Default Work Unit\Play_Footsteps_random
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_light_fire
+      guid: 05a30641aa6d8347a933228efd95f016
+      id: 1039124969
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_light_fire
+        ObjectType: 3
+        guid: 05a30641aa6d8347a933228efd95f016
+      Path: Events\Default Work Unit\Play_light_fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Menu_Music_Playlist
+      guid: e34eede354c3ca4b927525ec3f98731c
+      id: 3118224692
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_Menu_Music_Playlist
+        ObjectType: 3
+        guid: e34eede354c3ca4b927525ec3f98731c
+      Path: Events\Default Work Unit\Play_Menu_Music_Playlist
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -187,7 +255,7 @@ MonoBehaviour:
     m_lastTime: -8585267726438204353
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

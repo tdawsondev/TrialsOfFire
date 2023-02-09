@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{28B6D9CB-F099-EB0B-40D1-F1F4140549D3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BA3EFDE8-B816-3E64-EC68-17A860A21672}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,10 +22,18 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{618696F8-EC37-2E86-DA7D-8FF0EA9EA70F}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{A6BFB445-6AB9-344B-BBA8-2816EE6E59DA}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
+				<File Id="6346227" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explore\185 Bass STEM.wav</ShortName>
+					<CachePath>SFX/Explore/185 Bass STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="25459817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\181 Woodwinds STEM.wav</ShortName>
+					<CachePath>SFX/Combat/181 Woodwinds STEM_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="84612645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_5.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_5_10C4C929.wem</CachePath>
@@ -42,6 +50,18 @@
 					<ShortName>footsteps\footstep_6.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_6_10C4C929.wem</CachePath>
 				</File>
+				<File Id="385204008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\180 Drums intense STEM.wav</ShortName>
+					<CachePath>SFX/Combat/180 Drums intense STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="407614234" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explore\188 Emotional Stack STEM.wav</ShortName>
+					<CachePath>SFX/Explore/188 Emotional Stack STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="514870237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explore\184 Strings STEM.wav</ShortName>
+					<CachePath>SFX/Explore/184 Strings STEM_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="560081505" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_1.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_1_10C4C929.wem</CachePath>
@@ -50,6 +70,38 @@
 					<ShortName>footsteps\footstep_3.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="636407208" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>190 Menu Music STEM 152 bpm.wav</ShortName>
+					<CachePath>SFX/190 Menu Music STEM 152 bpm_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="666072819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\184 MOOG LEAD 2 STEM.wav</ShortName>
+					<CachePath>SFX/Combat/184 MOOG LEAD 2 STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="741307772" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explore\189 MOOG LEAD STEM.wav</ShortName>
+					<CachePath>SFX/Explore/189 MOOG LEAD STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="790201985" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explore\186 Choir STEM.wav</ShortName>
+					<CachePath>SFX/Explore/186 Choir STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="849014329" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\182 Strings STEM.wav</ShortName>
+					<CachePath>SFX/Combat/182 Strings STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="885257404" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\183 Pad STEM.wav</ShortName>
+					<CachePath>SFX/Combat/183 Pad STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="886936071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\179 Drums Tension STEM.wav</ShortName>
+					<CachePath>SFX/Combat/179 Drums Tension STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="891899391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Combat\178 Brass STEM.wav</ShortName>
+					<CachePath>SFX/Combat/178 Brass STEM_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="1018981790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_2.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_2_10C4C929.wem</CachePath>
@@ -57,10 +109,44 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="1416967478" Name="All_Buttons_IN" LibName="Wwise Compressor" LibId="7077891"/>
 					<Plugin Id="2038996943" Name="Plate_Sizzle" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3442768367" Name="Hall_Large_Dark" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1139882387" Name="Play_Combat_Playlist" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="25459817"/>
+						<MediaRef Id="385204008"/>
+						<MediaRef Id="666072819"/>
+						<MediaRef Id="849014329"/>
+						<MediaRef Id="885257404"/>
+						<MediaRef Id="886936071"/>
+						<MediaRef Id="891899391"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1416967478"/>
+							<PluginRef Id="3442768367"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="3158438924" Name="Play_Explore_Playlist" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="6346227"/>
+						<MediaRef Id="407614234"/>
+						<MediaRef Id="514870237"/>
+						<MediaRef Id="741307772"/>
+						<MediaRef Id="790201985"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3164629247"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="2545938451" Name="Play_Footsteps_random" DurationType="OneShot" DurationMin="0.42253968" DurationMax="0.42253968">
 					<MediaRefs>
 						<MediaRef Id="84612645"/>
@@ -76,6 +162,11 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="3118224692" Name="Play_Menu_Music_Playlist" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="636407208"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2340775150" Name="Play_SFX_spell_cast" DurationType="OneShot" DurationMin="1.9542403" DurationMax="1.9542403">
 					<MediaRefs>
 						<MediaRef Id="244977777"/>
@@ -84,5 +175,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA5DB831-9AD1-7B53-98B5-ABC1C58E2B50}</FileHash>
+	<FileHash>{599B3AB0-E7B4-1033-BD54-CFBBD7660839}</FileHash>
 </SoundBanksInfo>
