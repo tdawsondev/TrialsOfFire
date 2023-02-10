@@ -25,6 +25,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Combat_Playlist" ID="{B591CCCC-0E84-42EB-BDA6-DC53461A009E}">
+					<ChildrenList>
+						<Action Name="" ID="{0FBE0B33-C486-428D-8EB5-262513886B25}" ShortID="774805868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Combat Playlist" ID="{69FA4806-7D21-4075-A5BE-4959183B34A8}" WorkUnitID="{CFADE78D-6285-43AA-ACCC-CEE192CD8615}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Explore_Playlist" ID="{6BE1A544-C771-42C4-978B-514FF8E2796A}">
+					<ChildrenList>
+						<Action Name="" ID="{2677447A-3EB6-480E-A6DD-1ECD7C17C896}" ShortID="47216649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explore Playlist" ID="{5881E80B-0849-43B3-B230-AB4F1AA317EE}" WorkUnitID="{CFADE78D-6285-43AA-ACCC-CEE192CD8615}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu_Music_Playlist" ID="{E3ED4EE3-C354-4BCA-9275-25EC3F98731C}">
+					<ChildrenList>
+						<Action Name="" ID="{EEBD0AB9-6CA9-4B1B-8C3C-8CA7AB9A7333}" ShortID="133875432">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu Music Playlist" ID="{D8F65D72-8AD0-44D7-A8E3-74CA41165560}" WorkUnitID="{CFADE78D-6285-43AA-ACCC-CEE192CD8615}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_light_fire" ID="{4106A305-6DAA-4783-A933-228EFD95F016}">
+					<ChildrenList>
+						<Action Name="" ID="{AB3BC92A-BE90-4C6F-89FE-23FC6F917FFC}" ShortID="129287192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="light_fire" ID="{6B4F41CD-C519-42CB-B76E-4F96ACD4EB56}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Dragon_Growl" ID="{4F7F3863-EA9A-429E-8C48-AF82281568FE}">
+					<ChildrenList>
+						<Action Name="" ID="{579AC678-74D3-4C0F-8765-7AD3D79BEE39}" ShortID="1001702191">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dragon_Growl" ID="{36BFEF22-19D8-475C-9B8B-680DAA59E0B6}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

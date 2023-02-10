@@ -6,7 +6,12 @@
 				<SoundBank Name="New_SoundBank" ID="{B6F552DD-A5B6-48CD-ADDA-31FA2BD70BC1}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_SFX_spell_cast" ID="{480DC966-0B91-417D-8473-7F9535DA1A17}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footsteps_random" ID="{11F5CAA0-D6F3-4EDF-B5E8-3163B2E4F65C}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Explore_Playlist" ID="{6BE1A544-C771-42C4-978B-514FF8E2796A}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Combat_Playlist" ID="{B591CCCC-0E84-42EB-BDA6-DC53461A009E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dragon_Growl" ID="{36BFEF22-19D8-475C-9B8B-680DAA59E0B6}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_light_fire" ID="{4106A305-6DAA-4783-A933-228EFD95F016}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps_random" ID="{7C1CA5E4-E2DA-4AE4-99E3-B22043B60D3E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Menu_Music_Playlist" ID="{E3ED4EE3-C354-4BCA-9275-25EC3F98731C}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
