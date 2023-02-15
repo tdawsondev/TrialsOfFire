@@ -31,7 +31,192 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: anim_airFlameBreath
+      takeName: anim_airFlameBreath
+      internalID: -5503347431328806782
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arm_R_Lower_LP
+        weight: 0
+      - path: arm_R_Upper_LP
+        weight: 0
+      - path: Armature
+        weight: 0
+      - path: Armature/root
+        weight: 0
+      - path: Armature/root/arm_Pole_R
+        weight: 0
+      - path: Armature/root/arm_Pole_R/arm_Pole_R_end
+        weight: 0
+      - path: Armature/root/hand_IK_R
+        weight: 0
+      - path: Armature/root/hand_IK_R/hand_IK_R_end
+        weight: 0
+      - path: Armature/root/spine
+        weight: 0
+      - path: Armature/root/spine/hips
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_L
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_L/leg_Lower_L
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_L/leg_Lower_L/foot_L
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_L/leg_Lower_L/foot_L/toe_L
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_L/leg_Lower_L/foot_L/toe_L/toe_L_end
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_R
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_R/leg_Lower_R
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_R/leg_Lower_R/foot_R
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_R/leg_Lower_R/foot_R/toe_R
+        weight: 0
+      - path: Armature/root/spine/hips/leg_Upper_R/leg_Lower_R/foot_R/toe_R/toe_R_end
+        weight: 0
+      - path: Armature/root/spine/hips/tail_1
+        weight: 0
+      - path: Armature/root/spine/hips/tail_1/tail_2
+        weight: 0
+      - path: Armature/root/spine/hips/tail_1/tail_2/tail_3
+        weight: 0
+      - path: Armature/root/spine/hips/tail_1/tail_2/tail_3/tail_end
+        weight: 0
+      - path: Armature/root/spine/hips/tail_1/tail_2/tail_3/tail_end/tail_end_end
+        weight: 0
+      - path: Armature/root/spine/spine_1
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_L/arm_Lower_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_L/arm_Lower_L/arm_Lower_L_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/index_1
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/index_1/index_2
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/index_1/index_2/index_2_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/middle_1
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/middle_1/middle_2
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/middle_1/middle_2/middle_2_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/pinky_1
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/pinky_1/pinky_2
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/pinky_1/pinky_2/pinky_2_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/thumb
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/arm_Upper_R/arm_Lower_R/hand_R/thumb/thumb_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/neck_1
+        weight: 1
+      - path: Armature/root/spine/spine_1/spine_2/neck_1/neck_2
+        weight: 1
+      - path: Armature/root/spine/spine_1/spine_2/neck_1/neck_2/head
+        weight: 1
+      - path: Armature/root/spine/spine_1/spine_2/neck_1/neck_2/head/jaw
+        weight: 1
+      - path: Armature/root/spine/spine_1/spine_2/neck_1/neck_2/head/jaw/jaw_end
+        weight: 1
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L/wing_2_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L/wing_2_L/wing_3_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L/wing_2_L/wing_3_L/wing_3_L_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L/wing_2_L/wing_Flap_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_L/wing_2_L/wing_Flap_L/wing_Flap_L_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R/wing_2_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R/wing_2_R/wing_3_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R/wing_2_R/wing_3_R/wing_3_R_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R/wing_2_R/wing_Flap_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_1_R/wing_2_R/wing_Flap_R/wing_Flap_R_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_ik_L
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_ik_L/wing_ik_L_end
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_ik_R
+        weight: 0
+      - path: Armature/root/spine/spine_1/spine_2/wing_ik_R/wing_ik_R_end
+        weight: 0
+      - path: Armature/root/toe_ik_L
+        weight: 0
+      - path: Armature/root/toe_ik_L/leg_Pole_L
+        weight: 0
+      - path: Armature/root/toe_ik_L/leg_Pole_L/leg_Pole_L_end
+        weight: 0
+      - path: Armature/root/toe_ik_R
+        weight: 0
+      - path: Armature/root/toe_ik_R/leg_Pole_R
+        weight: 0
+      - path: Armature/root/toe_ik_R/leg_Pole_R/leg_Pole_R_end
+        weight: 0
+      - path: body_LP
+        weight: 0
+      - path: nodes_LP
+        weight: 0
+      - path: tail_LP
+        weight: 0
+      - path: tongue_LP
+        weight: 0
+      - path: tube_LP
+        weight: 0
+      - path: wings_LP
+        weight: 0
+      maskType: 1
+      maskSource: {fileID: 31900000, guid: 49fdd82be3d51f144a771cc18655bacc, type: 2}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
