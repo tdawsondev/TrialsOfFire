@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8272e0e474dfc6438434d3c57890155, type: 3}
   m_Name: Firebolt
   m_EditorClassIdentifier: 
+  spellName: Fire Arrow
+  spellChargeColor: {r: 1, g: 0, b: 0.09163618, a: 1}
+  spellIcon: {fileID: 21300000, guid: 5c2ba5634b9176b449797787a41fe805, type: 3}
   cost: 1
   chargeTime: 0.5
   chargeDelay: 0.15
   potency: 5
-  speed: 200
+  speed: 75

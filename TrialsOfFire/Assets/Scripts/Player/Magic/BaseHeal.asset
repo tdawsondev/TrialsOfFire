@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef49d98e2d8f5f24d94de42395e3cd07, type: 3}
   m_Name: BaseHeal
   m_EditorClassIdentifier: 
+  spellName: Heal
   cost: 1
   chargeTime: 1
   chargeDelay: 0.8

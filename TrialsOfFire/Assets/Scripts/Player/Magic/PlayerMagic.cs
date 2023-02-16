@@ -7,6 +7,8 @@ public class PlayerMagic : MonoBehaviour
     public Transform castPoint;
     public Hand rightHand;
     public Hand leftHand;
+
+    private bool systemLocked = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,8 @@ public class PlayerMagic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (systemLocked) return;
+
         if (Input.GetMouseButton(0))
         {
             rightHand.OnPress();
@@ -32,5 +36,23 @@ public class PlayerMagic : MonoBehaviour
         {
             leftHand.OnRelease();
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            rightHand.SwapSpells();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            leftHand.SwapSpells();
+        }
+
+    }
+
+    public void LockSystem()
+    {
+        systemLocked = true;
+    }
+    public void UnlockSystem()
+    {
+        systemLocked = false;
     }
 }

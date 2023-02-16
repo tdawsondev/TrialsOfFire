@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8272e0e474dfc6438434d3c57890155, type: 3}
+  m_Name: Icebolt
+  m_EditorClassIdentifier: 
+  spellName: Icebolt
+  spellChargeColor: {r: 0, g: 0.7281027, b: 1, a: 1}
+  spellIcon: {fileID: 21300000, guid: 85d8d4478cedb5a4a948ff2ee8a517f1, type: 3}
+  cost: 1
+  chargeTime: 1.2
+  chargeDelay: 0.2
+  potency: 3
+  speed: 60

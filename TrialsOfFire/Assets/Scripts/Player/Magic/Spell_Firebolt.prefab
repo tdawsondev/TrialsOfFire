@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats: {fileID: 11400000, guid: 7ad5bd7f8a571bf4e9affb7b1d60af92, type: 2}
-  effectivePotency: 0.760314
+  effectivePotency: 0.75
   projectile: {fileID: -3554945444214431871}
 --- !u!114 &-3554945444214431871
 MonoBehaviour:
@@ -191,4 +191,4 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2

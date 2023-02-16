@@ -34,6 +34,7 @@ public class MenuController : MonoBehaviour
     {
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
+        Player.Instance.LockPlayer();
         //lock the player.
     }
 
@@ -41,6 +42,8 @@ public class MenuController : MonoBehaviour
     {
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
+        Player.Instance.UnlockPlayer();
+
         //unlcok the player
     }
 

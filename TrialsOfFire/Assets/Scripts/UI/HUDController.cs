@@ -18,6 +18,11 @@ public class HUDController : MonoBehaviour
 
     [SerializeField] Slider rightCharge;
     [SerializeField] Slider leftCharge;
+    [SerializeField] TMP_Text leftSpellText, RightSpellText;
+    [SerializeField] Image rightSliderImage, leftSliderImage;
+    [SerializeField] Image spellImageRight, spellImageLeft;
+
+    [SerializeField] Slider healthBar, manaBar;
 
 
 
@@ -38,6 +43,10 @@ public class HUDController : MonoBehaviour
     {
         UpdateRightCharge();
         UpdateLeftCharge();
+        UpdateLeftSpell();
+        UpdateRightSpell();
+        UpdateHealth();
+        UpdateMana();
     }
 
     public void UpdateRightCharge()
@@ -51,6 +60,30 @@ public class HUDController : MonoBehaviour
         Hand hand = Player.Instance.Magic.leftHand;
         leftCharge.maxValue = hand.equipSpell.baseStats.chargeTime;
         leftCharge.value = hand.chargeTime;
+    }
+    public void UpdateLeftSpell()
+    {
+        SpellSO baseStats = Player.Instance.Magic.leftHand.equipSpell.baseStats;
+        leftSpellText.text = baseStats.spellName;
+        leftSliderImage.color = baseStats.spellChargeColor;
+        spellImageLeft.sprite = baseStats.spellIcon;
+
+    }
+    public void UpdateRightSpell()
+    {
+        SpellSO baseStats = Player.Instance.Magic.rightHand.equipSpell.baseStats;
+        RightSpellText.text = baseStats.spellName;
+        rightSliderImage.color = baseStats.spellChargeColor;
+        spellImageRight.sprite = baseStats.spellIcon;
+    }
+    public void UpdateHealth()
+    {
+        healthBar.maxValue = Player.Instance.health.maxHP;
+        healthBar.value = Player.Instance.health.currentHP;
+    }
+    public void UpdateMana()
+    {
+
     }
 
 

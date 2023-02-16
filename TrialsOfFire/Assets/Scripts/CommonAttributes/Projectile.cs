@@ -6,16 +6,14 @@ public class Projectile : MonoBehaviour
 {
 
     public bool fired;
-    private string tagToHit;
     private Vector3 direction;
-    private float damage;
     private float speed;
-
-    public void Fire(Vector3 direction, string targetTag, float dmg, float speed)
+    public delegate void OnCollison(Collider other);
+    //public event OnCollison OnHitDetected;
+    public OnCollison OnHitDetected;
+    public void Fire(Vector3 direction, float speed)
     {
-        tagToHit = targetTag;
         fired = true;
-        damage = dmg;
         this.speed = speed;
         this.direction = direction;
     }
@@ -37,18 +35,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == tagToHit)
-        {
-            Health health = other.GetComponent<Health>();
-            if (health != null)
-            {
-                health.Damage(damage);
-            }
-        }
-        if (other.tag != "Projectile")
-        {
-            Destroy(gameObject);
-        }
+        if (OnHitDetected != null)
+            OnHitDetected(other);
+        
     }
 
     

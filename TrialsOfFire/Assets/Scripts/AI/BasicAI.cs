@@ -47,7 +47,7 @@ public class BasicAI : MonoBehaviour
 			Roaming();
         }
         else{
-            Debug.Log("Player spotted");
+            //Debug.Log("Player spotted");
 			agent.SetDestination(targetPlayer.position);
 			agent.stoppingDistance = 4;
 
@@ -55,7 +55,7 @@ public class BasicAI : MonoBehaviour
     }
 
     private void Roaming() {
-		Debug.Log("Is Roaming");
+		//Debug.Log("Is Roaming");
 		if (!walkPointSet) ChooseLocation();
 
         if (walkPointSet) {
@@ -71,7 +71,7 @@ public class BasicAI : MonoBehaviour
     private void ChooseLocation(){
         float randomX = Random.Range(-patrolRange, patrolRange);
 		float randomZ = Random.Range(-patrolRange, patrolRange);
-        Debug.Log("Testing");
+        //Debug.Log("Testing");
 
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);

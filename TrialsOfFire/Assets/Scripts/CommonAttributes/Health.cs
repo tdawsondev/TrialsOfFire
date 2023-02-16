@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float maxHP, currentHP;
+    public Character character;
 
     /// <summary>
     /// Delegate for on health change event.
@@ -16,6 +17,11 @@ public class Health : MonoBehaviour
 
     public void Damage(float amount, Transform dealtBy = null)
     {
+        if(character != null)
+        {
+            amount *= character.DamageVulnerabitly.Value;
+        }
+
         currentHP -= amount;
         if(currentHP < 0f)
         {

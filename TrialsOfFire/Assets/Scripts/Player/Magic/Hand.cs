@@ -5,16 +5,25 @@ using UnityEngine;
 public class Hand : MonoBehaviour
 {
     public string leftOrRight;
+    [SerializeField]
     public Spell equipSpell;
+    public Spell spell1, spell2;
+    public int spellEquip = 1;
+
     public bool isCharging = false;
     public bool delaying = false;
     Transform castPoint;
 
     public float chargeTime = 0f;
+
+    [Header("Animation")]
+    public Animator handAnim;
+    public Animator chargeAnim;
     // Start is called before the first frame update
     void Start()
     {
         castPoint = Player.Instance.Magic.castPoint;
+        EquipSpell(spell1);
     }
 
     // Update is called once per frame
@@ -35,6 +44,7 @@ public class Hand : MonoBehaviour
             {
                 HUDController.instance.UpdateLeftCharge();
             }
+            handAnim.SetBool("Charging", true);
         }
         if (delaying)
         {
@@ -46,13 +56,15 @@ public class Hand : MonoBehaviour
     public void OnRelease()
     {
         isCharging = false;
+        
         if (delaying) return;
         float chargeRatio = chargeTime / equipSpell.baseStats.chargeTime;
         if(chargeRatio < 0.15f) 
         {
             chargeRatio = 0.15f; // minimum potency ratio
         }
-
+        handAnim.SetTrigger("Casting");
+        handAnim.SetBool("Charging", false);
         equipSpell.CastSpell(castPoint, chargeRatio);
         chargeTime = 0f;
         HUDController.instance.UpdateHUD();
@@ -69,5 +81,29 @@ public class Hand : MonoBehaviour
     public void OnPress()
     {
         isCharging = true;
+    }
+
+    public void SwapSpells()
+    {
+        if(spellEquip == 1)
+        {
+            spellEquip = 2;
+            EquipSpell(spell2);
+        }
+        else
+        {
+            spellEquip = 1;
+            EquipSpell(spell1);
+        }
+    }
+
+    public void EquipSpell(Spell newSpell)
+    {
+        isCharging = false;
+        chargeTime = 0f;
+        handAnim.SetFloat("ChargeSpeed", (.792f / newSpell.baseStats.chargeTime) + .45f); // .792 is the default animation time;
+        equipSpell = newSpell;
+        StartCoroutine(Delaying());
+        HUDController.instance.UpdateHUD();
     }
 }
