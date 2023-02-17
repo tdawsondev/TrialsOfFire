@@ -99,6 +99,11 @@ public class BasicAI : MonoBehaviour
         Debug.Log("Check Damage");
     }
 
+    public void ResetMelee()
+    {
+
+    }
+
     //Visual degugging
 	private void OnDrawGizmos()
 	{

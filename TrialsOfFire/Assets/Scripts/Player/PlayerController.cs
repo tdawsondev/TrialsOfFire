@@ -146,13 +146,15 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator FootStepLoop()
     {
+        Debug.Log("Start");
         while (true)
         {
             if (!mageCharacter.isGrounded)
             {
                 yield return new WaitForEndOfFrame();
             }
-           // AudioManager.instance.Play("Foot Steps");
+            Debug.Log("Play");
+            AudioManager.instance.Play("Foot Steps");
             yield return new WaitForSeconds(footstepsTime);
         }
         

@@ -1138,6 +1138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
+    - target: {fileID: 1185466577523970061, guid: e22124a2e375f874e83c543a2746a305,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1961404769131711159, guid: e22124a2e375f874e83c543a2746a305,
         type: 3}
       propertyPath: m_RootOrder
@@ -1195,18 +1200,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2067985949124661765, guid: e22124a2e375f874e83c543a2746a305,
         type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 906806221}
+    - target: {fileID: 2067985949124661765, guid: e22124a2e375f874e83c543a2746a305,
+        type: 3}
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 1238915153}
     - target: {fileID: 3925407398976307786, guid: e22124a2e375f874e83c543a2746a305,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.567
       objectReference: {fileID: 0}
     - target: {fileID: 3925407398976307786, guid: e22124a2e375f874e83c543a2746a305,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22124a2e375f874e83c543a2746a305, type: 3}
@@ -1501,6 +1511,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879113136}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &906806221 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5609343194067603661, guid: e22124a2e375f874e83c543a2746a305,
+    type: 3}
+  m_PrefabInstance: {fileID: 626004505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &926560229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1630,11 @@ PrefabInstance:
       propertyPath: handAnim
       value: 
       objectReference: {fileID: 133721784}
+    - target: {fileID: 6445763493633234552, guid: 16363bed128430440b167e90d5e941dc,
+        type: 3}
+      propertyPath: footstepsTime
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6445763493633234555, guid: 16363bed128430440b167e90d5e941dc,
         type: 3}
       propertyPath: m_Name
