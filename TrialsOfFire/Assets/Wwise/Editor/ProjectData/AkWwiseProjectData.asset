@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1edadcc925c4fb4c8bf2675418051472
     GuidInternal: 
-    m_lastTime: -8585250110113253722
+    m_lastTime: -8585250118589742929
     List:
     - name: Enviromental
       guid: e78b63460c055745b7974f86836972d5
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80f0961343b1c44e800d62cd736ae70b
     GuidInternal: 
-    m_lastTime: -8585250078651754234
+    m_lastTime: -8585250103446419775
     List:
     - name: New_SoundBank
       guid: dd52f5b6b6a5cd48adda31fa2bd70bc1
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9caba23ad7acf04685deead09ad7b08e
     GuidInternal: 
-    m_lastTime: -8585250078664579889
+    m_lastTime: -8585250104463427580
     List:
     - name: Play_Combat_Playlist
       guid: cccc91b5840eeb42bda6dc53461a009e
@@ -278,7 +278,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 73b493a5afa38f4e9292421b740b32ab
     GuidInternal: 
-    m_lastTime: -8585250110113443222
+    m_lastTime: -8585250133778089032
     List:
     - name: MasterVolume
       guid: 55eba7d094760e46a6f9c8f00abcc6fb
@@ -388,7 +388,7 @@ MonoBehaviour:
     m_lastTime: -8585267726438204353
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000004c0000004d000000d3000000d400000072010000df010000e001000009020000450200008702000088020000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
