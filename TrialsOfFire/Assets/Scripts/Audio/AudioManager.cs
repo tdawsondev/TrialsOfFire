@@ -26,7 +26,12 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        float masterVolumeValue = 25f;
+        if (PlayerPrefs.HasKey("MasterVolume"))
+        {
+            masterVolumeValue = PlayerPrefs.GetFloat("MasterVolume");
+        }
+        SetMasterVolume(masterVolumeValue);
     }
 
     // Update is called once per frame
@@ -74,5 +79,12 @@ public class AudioManager : MonoBehaviour
         {
             s.soundEvent.Stop(Player.Instance.gameObject);
         }
+    }
+
+
+    public void SetMasterVolume(float value)
+    {
+        AkSoundEngine.SetRTPCValue("MasterVolume", value);
+        PlayerPrefs.SetFloat("MasterVolume", value);
     }
 }

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4BF57638-188E-BACF-DFD7-EA99F68261C9}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DCF02C0E-B3EF-4109-F6B8-E5E6DC61A752}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,8 +21,11 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{A9D62E89-A0C9-2D19-40DB-3AFB7CF25575}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{5671C5B0-0753-2121-AD2B-82950392FBDB}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
@@ -46,6 +49,10 @@
 					<ShortName>SFX_spell_cast.wav</ShortName>
 					<CachePath>SFX/SFX_spell_cast_10C4C929.wem</CachePath>
 				</File>
+				<File Id="266605098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dragon_grown_3.wav</ShortName>
+					<CachePath>SFX/dragon_grown_3_BB3D636D.wem</CachePath>
+				</File>
 				<File Id="367317632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_6.wav</ShortName>
 					<CachePath>SFX/footsteps/footstep_6_10C4C929.wem</CachePath>
@@ -57,6 +64,10 @@
 				<File Id="407614234" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\188 Emotional Stack STEM.wav</ShortName>
 					<CachePath>SFX/Explore/188 Emotional Stack STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="476013138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dragon_grown_2.wav</ShortName>
+					<CachePath>SFX/dragon_grown_2_02B24A68.wem</CachePath>
 				</File>
 				<File Id="514870237" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\184 Strings STEM.wav</ShortName>
@@ -85,6 +96,10 @@
 				<File Id="741307772" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\189 MOOG LEAD STEM.wav</ShortName>
 					<CachePath>SFX/Explore/189 MOOG LEAD STEM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="775112491" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dragon_grown_1.wav</ShortName>
+					<CachePath>SFX/dragon_grown_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="790201985" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\186 Choir STEM.wav</ShortName>
@@ -137,6 +152,13 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="1807493041" Name="Play_Dragon_Growl" DurationType="OneShot" DurationMin="2.441542" DurationMax="5.2158604">
+					<MediaRefs>
+						<MediaRef Id="266605098"/>
+						<MediaRef Id="476013138"/>
+						<MediaRef Id="775112491"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3158438924" Name="Play_Explore_Playlist" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="6346227"/>
@@ -184,5 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B319FAB8-5D64-2ED8-941A-7CB6BDE8F5F0}</FileHash>
+	<FileHash>{115F201B-89E2-CCC5-1A10-5851488AE366}</FileHash>
 </SoundBanksInfo>

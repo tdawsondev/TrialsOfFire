@@ -4,7 +4,10 @@
 		<UserProjectSettings Name="" ID="{0A38F0BB-C5DD-4841-BAE1-31CD846AA55F}">
 			<PropertyList>
 				<Property Name="Event Action List\{480DC966-0B91-417D-8473-7F9535DA1A17}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4F7F3863-EA9A-429E-8C48-AF82281568FE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6BE1A544-C771-42C4-978B-514FF8E2796A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7C1CA5E4-E2DA-4AE4-99E3-B22043B60D3E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B591CCCC-0E84-42EB-BDA6-DC53461A009E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -37,6 +40,10 @@
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="Music Transition List\{5881E80B-0849-43B3-B230-AB4F1AA317EE}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{5881E80B-0849-43B3-B230-AB4F1AA317EE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{69FA4806-7D21-4075-A5BE-4959183B34A8}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{69FA4806-7D21-4075-A5BE-4959183B34A8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value="ewBCADYARgA1ADUAMgBEAEQALQBBADUAQgA2AC0ANAA4AEMARAAtAEEARABEAEEALQAzADEARgBBADIAQgBEADcAMABCAEMAMQB9AAAAAQE="/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value="ewA0ADgAMABEAEMAOQA2ADYALQAwAEIAOQAxAC0ANAAxADcARAAtADgANAA3ADMALQA3AEYAOQA1ADMANQBEAEEAMQBBADEANwB9AAAAAQE="/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>

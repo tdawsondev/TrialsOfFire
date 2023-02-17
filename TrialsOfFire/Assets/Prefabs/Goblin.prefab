@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116135942132022575}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -111,6 +111,8 @@ GameObject:
   - component: {fileID: 3431947485612543831}
   - component: {fileID: 2096326478}
   - component: {fileID: 2096326479}
+  - component: {fileID: 651417070}
+  - component: {fileID: 651417071}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -146,7 +148,7 @@ Animator:
   m_GameObject: {fileID: 1185466577523970061}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6503262c429d6e942be17f3f8a265c91, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09163da2cc285774dba8c4805c431c92, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -177,7 +179,8 @@ MonoBehaviour:
     m_Bits: 128
   targetPlayer: {fileID: 0}
   patrolRange: 10
-  sightRange: 15
+  sightRange: 100
+  stoppingDistance: 3
 --- !u!195 &2067985949124661764
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -188,8 +191,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 8
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -214,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 10
   currentHP: 10
+  character: {fileID: 651417071}
 --- !u!136 &2096326478
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -241,6 +245,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: {fileID: 3431947485612543831}
+  character: {fileID: 651417071}
+--- !u!114 &651417070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185466577523970061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769bb662b70981f48adf9d355be4abb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeEffects: []
+--- !u!114 &651417071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185466577523970061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c907760a64a8c72419091557da6bfcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed:
+    baseValue: 10
+    modifiers: []
+  DamageVulnerabitly:
+    baseValue: 1
+    modifiers: []
+  DamageOutputModifier:
+    baseValue: 1
+    modifiers: []
+  effectRunner: {fileID: 651417070}
 --- !u!1 &1265046893721536076
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4721060836777756583}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

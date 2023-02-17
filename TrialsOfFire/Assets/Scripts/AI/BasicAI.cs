@@ -20,10 +20,13 @@ public class BasicAI : MonoBehaviour
     [SerializeField]
     private float sightRange;
 
+    public float stoppingDistance;
+
     bool walkPointSet;
     private Vector3 walkPoint;
 
     bool playerInSight;
+    public Animator animator;
 
 	private void Awake()
 	{
@@ -47,15 +50,23 @@ public class BasicAI : MonoBehaviour
 			Roaming();
         }
         else{
-            //Debug.Log("Player spotted");
-			agent.SetDestination(targetPlayer.position);
-			agent.stoppingDistance = 4;
+            // player in sight.
+			ChaseTarget();
 
 		}
     }
 
+    public void ChaseTarget()
+    {
+        agent.SetDestination(targetPlayer.position);
+        agent.stoppingDistance = stoppingDistance;
+        if(agent.remainingDistance <= agent.stoppingDistance)
+        {
+            animator.SetTrigger("Swing");
+        }
+    }
+
     private void Roaming() {
-		//Debug.Log("Is Roaming");
 		if (!walkPointSet) ChooseLocation();
 
         if (walkPointSet) {
@@ -71,7 +82,6 @@ public class BasicAI : MonoBehaviour
     private void ChooseLocation(){
         float randomX = Random.Range(-patrolRange, patrolRange);
 		float randomZ = Random.Range(-patrolRange, patrolRange);
-        //Debug.Log("Testing");
 
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
@@ -83,6 +93,11 @@ public class BasicAI : MonoBehaviour
 
 
 	}
+
+    public void CheckDamage()
+    {
+        Debug.Log("Check Damage");
+    }
 
     //Visual degugging
 	private void OnDrawGizmos()

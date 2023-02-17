@@ -14,12 +14,18 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_COMBAT_PLAYLIST = 1139882387U;
+        static const AkUniqueID PLAY_DRAGON_GROWL = 1807493041U;
         static const AkUniqueID PLAY_EXPLORE_PLAYLIST = 3158438924U;
         static const AkUniqueID PLAY_FOOTSTEPS_RANDOM = 2545938451U;
         static const AkUniqueID PLAY_LIGHT_FIRE = 1039124969U;
         static const AkUniqueID PLAY_MENU_MUSIC_PLAYLIST = 3118224692U;
         static const AkUniqueID PLAY_SFX_SPELL_CAST = 2340775150U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

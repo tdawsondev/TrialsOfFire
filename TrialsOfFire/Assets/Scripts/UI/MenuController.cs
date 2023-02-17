@@ -99,6 +99,7 @@ public class MenuController : MonoBehaviour
         fadeAnimator.gameObject.SetActive(true);
         fadeAnimator.SetTrigger("FadeOut");
         yield return new WaitForSecondsRealtime(0.44f);
+        AkSoundEngine.StopAll();
         SceneManager.LoadScene(buildIndex);
 
     }

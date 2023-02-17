@@ -58,7 +58,21 @@ MonoBehaviour:
     soundEvent:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 35a038a211f1555428a2dc0d44bf9572,
+      WwiseObjectReference: {fileID: 11400000, guid: f51d366e422793c46b867ec2d20d529a,
+        type: 2}
+  - soundName: MenuMusic
+    soundType: 1
+    soundEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 10061e47a98f37545b96246e3d211f53,
+        type: 2}
+  - soundName: CombatPlaylist
+    soundType: 1
+    soundEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 3deb295d8c42d214da2ce15c69c92fc7,
         type: 2}
 --- !u!114 &1927690788033874208
 MonoBehaviour:
