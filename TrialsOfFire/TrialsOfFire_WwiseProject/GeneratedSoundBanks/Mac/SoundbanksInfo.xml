@@ -31,7 +31,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{5671C5B0-0753-2121-AD2B-82950392FBDB}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{AC229F26-4AFC-BECF-08BD-6D866EB602C0}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
@@ -39,21 +39,25 @@
 					<ShortName>Explore\185 Bass STEM.wav</ShortName>
 					<CachePath>SFX/Explore/185 Bass STEM_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="15033305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fire Ball Spell_4.wav</ShortName>
+					<CachePath>SFX/Fire Ball Spell_4_1A1DA218.wem</CachePath>
+				</File>
 				<File Id="25459817" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\181 Woodwinds STEM.wav</ShortName>
 					<CachePath>SFX/Combat/181 Woodwinds STEM_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="84612645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_5.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_5_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_5_59C9B22C.wem</CachePath>
 				</File>
 				<File Id="174776349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_4.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_4_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_4_59C9B22C.wem</CachePath>
 				</File>
-				<File Id="244977777" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_spell_cast.wav</ShortName>
-					<CachePath>SFX/SFX_spell_cast_10C4C929.wem</CachePath>
+				<File Id="214820739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fire Ball Spell_2.wav</ShortName>
+					<CachePath>SFX/Fire Ball Spell_2_9EF3ABDF.wem</CachePath>
 				</File>
 				<File Id="266605098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dragon_grown_3.wav</ShortName>
@@ -61,7 +65,7 @@
 				</File>
 				<File Id="367317632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_6.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_6_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_6_59C9B22C.wem</CachePath>
 				</File>
 				<File Id="385204008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\180 Drums intense STEM.wav</ShortName>
@@ -81,11 +85,11 @@
 				</File>
 				<File Id="560081505" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_1.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_1_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_1_59C9B22C.wem</CachePath>
 				</File>
 				<File Id="599553398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_3.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_3_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_3_59C9B22C.wem</CachePath>
 				</File>
 				<File Id="636407208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>190 Menu Music STEM 152 bpm.wav</ShortName>
@@ -98,6 +102,10 @@
 				<File Id="712757521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>light_fire.wav</ShortName>
 					<CachePath>SFX/light_fire_10C4C929.wem</CachePath>
+				</File>
+				<File Id="730421286" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fire Ball Spell_1.wav</ShortName>
+					<CachePath>SFX/Fire Ball Spell_1_37FEBF96.wem</CachePath>
 				</File>
 				<File Id="741307772" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\189 MOOG LEAD STEM.wav</ShortName>
@@ -129,13 +137,12 @@
 				</File>
 				<File Id="1018981790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_2.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_2_10C4C929.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_2_59C9B22C.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="1416967478" Name="All_Buttons_IN" LibName="Wwise Compressor" LibId="7077891"/>
-					<Plugin Id="2038996943" Name="Plate_Sizzle" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3442768367" Name="Hall_Large_Dark" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
@@ -157,6 +164,9 @@
 							<PluginRef Id="3442768367"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3991942870" Name="Music"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1807493041" Name="Play_Dragon_Growl" DurationType="OneShot" DurationMin="2.441542" DurationMax="5.2158604">
 					<MediaRefs>
@@ -164,6 +174,9 @@
 						<MediaRef Id="476013138"/>
 						<MediaRef Id="775112491"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3922907557" Name="Enviromental"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3158438924" Name="Play_Explore_Playlist" DurationType="Infinite">
 					<MediaRefs>
@@ -178,6 +191,9 @@
 							<PluginRef Id="3164629247"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3991942870" Name="Music"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2545938451" Name="Play_Footsteps_random" DurationType="OneShot" DurationMin="0.42253968" DurationMax="0.42253968">
 					<MediaRefs>
@@ -188,29 +204,38 @@
 						<MediaRef Id="599553398"/>
 						<MediaRef Id="1018981790"/>
 					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2038996943"/>
-						</ShareSets>
-					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3922907557" Name="Enviromental"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1039124969" Name="Play_light_fire" DurationType="OneShot" DurationMin="4.048254" DurationMax="4.048254">
 					<MediaRefs>
 						<MediaRef Id="712757521"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3922907557" Name="Enviromental"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3118224692" Name="Play_Menu_Music_Playlist" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="636407208"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3991942870" Name="Music"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="2340775150" Name="Play_SFX_spell_cast" DurationType="OneShot" DurationMin="1.9542403" DurationMax="1.9542403">
+				<Event Id="3300599549" Name="Play_SFX_spell_cast_randomContainer" DurationType="OneShot" DurationMin="1.0333679" DurationMax="1.0338823">
 					<MediaRefs>
-						<MediaRef Id="244977777"/>
+						<MediaRef Id="15033305"/>
+						<MediaRef Id="214820739"/>
+						<MediaRef Id="730421286"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3922907557" Name="Enviromental"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F48445DE-82FD-8F8B-FF9A-1440DD1D2EB8}</FileHash>
+	<FileHash>{BE1A6496-1898-1E35-26D8-054D1022BB76}</FileHash>
 </SoundBanksInfo>
