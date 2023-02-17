@@ -1633,7 +1633,7 @@ PrefabInstance:
     - target: {fileID: 6445763493633234552, guid: 16363bed128430440b167e90d5e941dc,
         type: 3}
       propertyPath: footstepsTime
-      value: 0.8
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6445763493633234555, guid: 16363bed128430440b167e90d5e941dc,
         type: 3}

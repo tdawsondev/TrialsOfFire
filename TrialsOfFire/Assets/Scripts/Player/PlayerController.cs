@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed;
     public float dashDelay = 0.5f;
     private Vector3 moveDirection;
+    public Vector2 input;
     public float smooth;
     float _smoothValx, _smoothValZ; // used in input smoothing
     public float jumpHeight = 10f;
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("Is Grounded: " + mageCharacter.isGrounded);
         grounded = mageCharacter.isGrounded;
         Vector2 smoothedInput = SmoothedInput();
+        input = smoothedInput;
         float horizontal = smoothedInput.x;
         float vertical = smoothedInput.y;
         float mouse_x = Input.GetAxis("Mouse X");
@@ -129,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckPlaySound()
     {
-        if(mageCharacter.velocity.magnitude > 0f)
+        if(input.magnitude > 0f)
         {
             if (!footstepsIsPlaying)
             {
