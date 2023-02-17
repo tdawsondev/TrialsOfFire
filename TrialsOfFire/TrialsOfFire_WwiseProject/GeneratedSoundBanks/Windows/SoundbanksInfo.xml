@@ -31,7 +31,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{AC229F26-4AFC-BECF-08BD-6D866EB602C0}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{F55A971F-2916-6411-4244-9243AEC5842F}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
@@ -41,7 +41,7 @@
 				</File>
 				<File Id="15033305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_4.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_4_1A1DA218.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_4_F110C659.wem</CachePath>
 				</File>
 				<File Id="25459817" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\181 Woodwinds STEM.wav</ShortName>
@@ -49,15 +49,15 @@
 				</File>
 				<File Id="84612645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_5.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_5_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_5_3DDB8E0C.wem</CachePath>
 				</File>
 				<File Id="174776349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_4.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_4_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_4_3DDB8E0C.wem</CachePath>
 				</File>
 				<File Id="214820739" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_2.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_2_9EF3ABDF.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_2_E07B5596.wem</CachePath>
 				</File>
 				<File Id="266605098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dragon_grown_3.wav</ShortName>
@@ -65,7 +65,7 @@
 				</File>
 				<File Id="367317632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_6.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_6_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_6_3DDB8E0C.wem</CachePath>
 				</File>
 				<File Id="385204008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\180 Drums intense STEM.wav</ShortName>
@@ -85,11 +85,11 @@
 				</File>
 				<File Id="560081505" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_1.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_1_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_1_3DDB8E0C.wem</CachePath>
 				</File>
 				<File Id="599553398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_3.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_3_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_3_3DDB8E0C.wem</CachePath>
 				</File>
 				<File Id="636407208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>190 Menu Music STEM 152 bpm.wav</ShortName>
@@ -105,7 +105,7 @@
 				</File>
 				<File Id="730421286" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_1.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_1_37FEBF96.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_1_06B16A93.wem</CachePath>
 				</File>
 				<File Id="741307772" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\189 MOOG LEAD STEM.wav</ShortName>
@@ -137,7 +137,7 @@
 				</File>
 				<File Id="1018981790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_2.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_2_59C9B22C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_2_3DDB8E0C.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -237,5 +237,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A674A14F-1777-59D9-AC3F-1ACAF058ADF8}</FileHash>
+	<FileHash>{7A29D635-79FF-5677-D96D-C0BE44F91030}</FileHash>
 </SoundBanksInfo>

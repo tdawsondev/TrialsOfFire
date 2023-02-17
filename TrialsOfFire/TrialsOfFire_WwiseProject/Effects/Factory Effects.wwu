@@ -1231,7 +1231,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="1.75"/>
 										<Property Name="PreDelay" Type="Real32" Value="40"/>
 										<Property Name="Quality" Type="int32" Value="10"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-17"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-21"/>
 										<Property Name="RoomShape" Type="Real32" Value="0"/>
 										<Property Name="RoomSize" Type="Real32" Value="20"/>
 										<Property Name="StereoWidth" Type="Real32" Value="155"/>
