@@ -14,6 +14,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Music" ID="{91A5FC3C-7D0A-4808-A618-CB1FE0B3F18F}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Combat Main" ID="{A1DC2FBA-02C1-4BD1-838C-8509C861ABAD}" ShortID="1070901670">
@@ -798,7 +801,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -1983,6 +1985,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Music" ID="{91A5FC3C-7D0A-4808-A618-CB1FE0B3F18F}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Menu Music" ID="{59D963DD-07DC-489F-B2F5-F79326A1ABE2}" ShortID="472276807">
@@ -2252,6 +2257,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Music" ID="{91A5FC3C-7D0A-4808-A618-CB1FE0B3F18F}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3152,7 +3160,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>10.4104</XPos>
-																								<YPos>-0</YPos>
+																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>

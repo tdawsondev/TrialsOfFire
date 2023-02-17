@@ -63,7 +63,7 @@
 						<Action Name="" ID="{AB3BC92A-BE90-4C6F-89FE-23FC6F917FFC}" ShortID="129287192">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="light_fire" ID="{6B4F41CD-C519-42CB-B76E-4F96ACD4EB56}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+									<ObjectRef Name="Light_fire" ID="{6B4F41CD-C519-42CB-B76E-4F96ACD4EB56}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
