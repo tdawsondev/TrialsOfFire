@@ -10,14 +10,14 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Enviromental" ID="{46638BE7-050C-4557-B797-4F86836972D5}">
+						<Bus Name="Environmental" ID="{398B7856-2828-4515-924F-90863A9B0DDB}">
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{F7B35E5C-A9FB-46AD-8053-2AF5D4BA595A}" ShortID="217950781">
+											<RTPC Name="" ID="{1F08430C-CAE9-4E92-841C-C4B89538F79B}" ShortID="933143403">
 												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
@@ -25,7 +25,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{FBD23C1C-653A-488F-B2BC-A398D375C6A6}">
+															<Curve Name="" ID="{39B21773-43C4-4627-9147-858DCBEF86D1}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -50,16 +50,15 @@
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Music" ID="{91A5FC3C-7D0A-4808-A618-CB1FE0B3F18F}">
-							<ReferenceList/>
+						</Bus>
+						<Bus Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}">
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{39D9DC80-3432-4AF6-A725-5B51254916A8}" ShortID="182524915">
+											<RTPC Name="" ID="{B5D0E43C-2064-4A1F-B27C-5B1CCCECD3A6}" ShortID="146568165">
 												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
@@ -67,7 +66,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{79E447C6-2445-4A09-B481-86F8E7224CD4}">
+															<Curve Name="" ID="{859B42EC-4A6C-46D9-9645-14BE38380BD6}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -92,7 +91,7 @@
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
-						</AuxBus>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">

@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Mana : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float maxMana, currentMana;
+
+
+    public void UseMana(float amount)
     {
-        
+
+        currentMana -= amount;
+        if (currentMana < 0f)
+        {
+            currentMana = 0f;
+        }
+    }
+    public void ReplenishMana(float amount)
+    {
+        currentMana += amount;
+        if (currentMana > maxMana) currentMana = maxMana;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 6d6c82e9f6fba2748ab0f48a5ae1f9c0
   - enabled: 1
+    path: Assets/Scenes/BossRoom.unity
+    guid: 98ee54f9389032549829a9218fda2b53
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: df29bb33c7f0fce449b25076b5a51cc3
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1

@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    public static MenuController instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
 
     [SerializeField] private Animator fadeAnimator; // for fading in and out of scenes.
     public bool paused = false;
     public bool mainMenu = false;
     [SerializeField] private Animator pauseMenu;
+    public GameObject pauseMenuObject;
+    public GameObject GameOverMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -107,5 +115,13 @@ public class MenuController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenGameOverMenu()
+    {
+        FreezeGame();
+        pauseMenu.gameObject.SetActive(true);
+        pauseMenuObject.SetActive(false);
+        GameOverMenu.gameObject.SetActive(true);
     }
 }

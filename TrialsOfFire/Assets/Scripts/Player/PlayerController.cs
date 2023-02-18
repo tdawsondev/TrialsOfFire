@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckPlaySound()
     {
-        if(input.magnitude > 0f)
+        if(input.magnitude > 0f && grounded)
         {
             if (!footstepsIsPlaying)
             {
@@ -148,14 +148,14 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator FootStepLoop()
     {
-        Debug.Log("Start");
+        //Debug.Log("Start");
         while (true)
         {
             if (!mageCharacter.isGrounded)
             {
                 yield return new WaitForEndOfFrame();
             }
-            Debug.Log("Play");
+            //Debug.Log("Play");
             AudioManager.instance.Play("Foot Steps");
             yield return new WaitForSeconds(footstepsTime);
         }

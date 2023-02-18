@@ -27,15 +27,45 @@ public class BasicAI : MonoBehaviour
 
     bool playerInSight;
     public Animator animator;
+    public Health health;
+
+    [Header("Damage Box")]
+    public float damageRadius;
+    public Transform damageBox;
+    public float damage;
+    public GameObject healthPickup;
 
 	private void Awake()
 	{
         agent = GetComponent<NavMeshAgent>();
+        health.onHealthChange += OnDamaged;
 	}
 
+    private void OnDamaged(float amount, Transform changedBy = null)
+    {
+        if (health.Dead)
+        {
+            CheckLootChance();
+            Destroy(gameObject);
+        }
+    }
+    private void OnDestroy()
+    {
+        health.onHealthChange -= OnDamaged;
+    }
 
-	// Start is called before the first frame update
-	void Start()
+    public void CheckLootChance()
+    {
+        float rand = Random.value;
+        if(rand < 0.3f)
+        {
+            Instantiate(healthPickup, transform.position, Quaternion.identity);
+        }
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
     {
 		targetPlayer = Player.Instance.transform;
 	}
@@ -96,7 +126,14 @@ public class BasicAI : MonoBehaviour
 
     public void CheckDamage()
     {
-        Debug.Log("Check Damage");
+        Collider[] colliders = Physics.OverlapSphere(damageBox.position, damageRadius);
+        foreach (Collider collider in colliders)
+        {
+            if (collider.tag == "Player")
+            {
+                Player.Instance.health.Damage(damage, transform);
+            }
+        }
     }
 
     public void ResetMelee()

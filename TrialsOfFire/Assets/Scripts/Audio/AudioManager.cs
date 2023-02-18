@@ -32,6 +32,20 @@ public class AudioManager : MonoBehaviour
             masterVolumeValue = PlayerPrefs.GetFloat("MasterVolume");
         }
         SetMasterVolume(masterVolumeValue);
+
+        float musicVolumeValue = 25f;
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            musicVolumeValue = PlayerPrefs.GetFloat("MusicVolume");
+        }
+        SetMusicVolume(musicVolumeValue);
+
+        float sfxVolumeValue = 25f;
+        if (PlayerPrefs.HasKey("SFXVolume"))
+        {
+            sfxVolumeValue = PlayerPrefs.GetFloat("SFXVolume");
+        }
+        SetSFXVolume(sfxVolumeValue);
     }
 
     // Update is called once per frame
@@ -86,5 +100,15 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue("MasterVolume", value);
         PlayerPrefs.SetFloat("MasterVolume", value);
+    }
+    public void SetMusicVolume(float value)
+    {
+        AkSoundEngine.SetRTPCValue("MusicVolume", value);
+        PlayerPrefs.SetFloat("MusicVolume", value);
+    }
+    public void SetSFXVolume(float value)
+    {
+        AkSoundEngine.SetRTPCValue("SFXVolume", value);
+        PlayerPrefs.SetFloat("SFXVolume", value);
     }
 }

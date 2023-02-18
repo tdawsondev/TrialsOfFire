@@ -51,7 +51,7 @@ MonoBehaviour:
     soundEvent:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 35a038a211f1555428a2dc0d44bf9572,
+      WwiseObjectReference: {fileID: 11400000, guid: f0ec8eceb53000a4ab28cb0894e1b684,
         type: 2}
   - soundName: Foot Steps
     soundType: 0
@@ -73,6 +73,13 @@ MonoBehaviour:
       idInternal: 0
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 3deb295d8c42d214da2ce15c69c92fc7,
+        type: 2}
+  - soundName: PlayerHit
+    soundType: 0
+    soundEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 7d3be970d1c714d48bf7facd10595fd8,
         type: 2}
 --- !u!114 &1927690788033874208
 MonoBehaviour:

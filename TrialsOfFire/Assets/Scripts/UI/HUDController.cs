@@ -24,6 +24,10 @@ public class HUDController : MonoBehaviour
 
     [SerializeField] Slider healthBar, manaBar;
 
+    public CanvasGroup topBar, bottomBar, leftBar, rightBar;
+
+    public Slider BossBar;
+
 
 
     // Start is called before the first frame update
@@ -84,6 +88,28 @@ public class HUDController : MonoBehaviour
     public void UpdateMana()
     {
 
+    }
+
+    public void StartDirectionFade(CanvasGroup group)
+    {
+        group.alpha = 1f;
+        StartCoroutine(FadeOut(group));
+
+    }
+    IEnumerator FadeOut(CanvasGroup group)
+    {
+        while (group.alpha > 0f)
+        {
+            group.alpha -= 1f * Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        yield return null;
+    }
+
+    public void UpdateBossBar(Health health)
+    {
+        BossBar.maxValue = health.maxHP;
+        BossBar.value = health.currentHP;
     }
 
 

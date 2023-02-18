@@ -7,6 +7,10 @@ public class SettingsController : MonoBehaviour
 {
     [SerializeField] private Slider masterVolume;
     float masterVolumeValue;
+    [SerializeField] private Slider musicVolume;
+    float musicVolumeValue;
+    [SerializeField] private Slider sfxVolume;
+    float sfxVolumeValue;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +20,21 @@ public class SettingsController : MonoBehaviour
         {
             masterVolumeValue = PlayerPrefs.GetFloat("MasterVolume");
         }
-        
         masterVolume.value = masterVolumeValue;
+
+        musicVolumeValue = 25f;
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            musicVolumeValue = PlayerPrefs.GetFloat("MusicVolume");
+        }
+        musicVolume.value = musicVolumeValue;
+
+        sfxVolumeValue = 25f;
+        if (PlayerPrefs.HasKey("SFXVolume"))
+        {
+            sfxVolumeValue = PlayerPrefs.GetFloat("SFXVolume");
+        }
+        sfxVolume.value = sfxVolumeValue;
     }
 
     // Update is called once per frame
@@ -31,4 +48,15 @@ public class SettingsController : MonoBehaviour
         masterVolumeValue = masterVolume.value;
         AudioManager.instance.SetMasterVolume(masterVolumeValue);
     }
+    public void SetMusicVolume()
+    {
+        musicVolumeValue = musicVolume.value;
+        AudioManager.instance.SetMusicVolume(musicVolumeValue);
+    }
+    public void SetSFXVolume()
+    {
+        sfxVolumeValue = sfxVolume.value;
+        AudioManager.instance.SetSFXVolume(sfxVolumeValue);
+    }
+
 }

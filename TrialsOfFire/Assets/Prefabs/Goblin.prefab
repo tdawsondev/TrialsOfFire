@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 2096326479}
   - component: {fileID: 651417070}
   - component: {fileID: 651417071}
+  - component: {fileID: 2915521763172700327}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -135,6 +136,7 @@ Transform:
   - {fileID: 3925407398226251459}
   - {fileID: 8437267660442232656}
   - {fileID: 3888894955327350886}
+  - {fileID: 976137990926332922}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,6 +183,13 @@ MonoBehaviour:
   patrolRange: 10
   sightRange: 100
   stoppingDistance: 3
+  animator: {fileID: 5609343194067603661}
+  health: {fileID: 3431947485612543831}
+  damageRadius: 1.3
+  damageBox: {fileID: 976137990926332922}
+  damage: 3
+  healthPickup: {fileID: 1446858882474483077, guid: 5665513dab3c8cb4b8cf804f00cdac2b,
+    type: 3}
 --- !u!195 &2067985949124661764
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -192,7 +201,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 8
-  m_Acceleration: 20
+  m_Acceleration: 40
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -215,8 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acafd78abe3bb2f4ab43802ec06325b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
-  currentHP: 10
+  maxHP: 5
+  currentHP: 5
   character: {fileID: 651417071}
 --- !u!136 &2096326478
 CapsuleCollider:
@@ -281,6 +290,21 @@ MonoBehaviour:
     baseValue: 1
     modifiers: []
   effectRunner: {fileID: 651417070}
+--- !u!114 &2915521763172700327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185466577523970061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a065746a9474a2a4a9c8ccff6da731ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  RotationSpeed: 80
+  allowUpdate: 1
 --- !u!1 &1265046893721536076
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +654,51 @@ Transform:
   m_Father: {fileID: 1109952318131680569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4404911836500798223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976137990926332922}
+  - component: {fileID: 4092505398876476078}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976137990926332922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4404911836500798223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.617, z: 0.751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1961404769131711159}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &4092505398876476078
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4404911836500798223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4545682752734948627
 GameObject:
   m_ObjectHideFlags: 0
