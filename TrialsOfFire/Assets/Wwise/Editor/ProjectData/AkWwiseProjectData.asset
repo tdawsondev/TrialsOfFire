@@ -38,11 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1edadcc925c4fb4c8bf2675418051472
     GuidInternal: 
-    m_lastTime: -8585250118589742929
+    m_lastTime: -8585246117149134877
     List:
-    - name: Enviromental
-      guid: e78b63460c055745b7974f86836972d5
-      id: 3922907557
+    - name: Environmental
+      guid: 56788b3928281545924f90863a9b0ddb
+      id: 1973600711
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -53,10 +53,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Enviromental
-        ObjectType: 1
-        guid: e78b63460c055745b7974f86836972d5
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Enviromental
+      - ElementName: Environmental
+        ObjectType: 2
+        guid: 56788b3928281545924f90863a9b0ddb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environmental
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -72,7 +72,7 @@ MonoBehaviour:
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
     - name: Music
-      guid: 3cfca5910a7d0848a618cb1fe0b3f18f
+      guid: 2b7fde120fb64542b9f91c737a3cf791
       id: 3991942870
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
@@ -85,8 +85,8 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: Music
-        ObjectType: 1
-        guid: 3cfca5910a7d0848a618cb1fe0b3f18f
+        ObjectType: 2
+        guid: 2b7fde120fb64542b9f91c737a3cf791
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80f0961343b1c44e800d62cd736ae70b
     GuidInternal: 
-    m_lastTime: -8585250103446419775
+    m_lastTime: -8585246088241561525
     List:
     - name: New_SoundBank
       guid: dd52f5b6b6a5cd48adda31fa2bd70bc1
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9caba23ad7acf04685deead09ad7b08e
     GuidInternal: 
-    m_lastTime: -8585250104463427580
+    m_lastTime: -8585246088241686709
     List:
     - name: Play_Combat_Playlist
       guid: cccc91b5840eeb42bda6dc53461a009e
@@ -147,9 +147,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Dragon_Growl
+    - name: Play_Dragon_Roar
       guid: 63387f4f9aea9e428c48af82281568fe
-      id: 1807493041
+      id: 2084793062
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -157,10 +157,44 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 9caba23ad7acf04685deead09ad7b08e
-      - ElementName: Play_Dragon_Growl
+      - ElementName: Play_Dragon_Roar
         ObjectType: 3
         guid: 63387f4f9aea9e428c48af82281568fe
-      Path: Events\Default Work Unit\Play_Dragon_Growl
+      Path: Events\Default Work Unit\Play_Dragon_Roar
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_dragonWingLeft
+      guid: 053571375a4040499696e52c20f9dc4b
+      id: 1260596673
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_dragonWingLeft
+        ObjectType: 3
+        guid: 053571375a4040499696e52c20f9dc4b
+      Path: Events\Default Work Unit\Play_dragonWingLeft
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_dragonWingRight
+      guid: 35c5bb3167adbb4e867010610f53570d
+      id: 2607860660
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_dragonWingRight
+        ObjectType: 3
+        guid: 35c5bb3167adbb4e867010610f53570d
+      Path: Events\Default Work Unit\Play_dragonWingRight
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -232,6 +266,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_GameOver
+      guid: 21e418a9a51873409fd6d4f7bd5af05a
+      id: 363031598
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_GameOver
+        ObjectType: 3
+        guid: 21e418a9a51873409fd6d4f7bd5af05a
+      Path: Events\Default Work Unit\Play_SFX_GameOver
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_PlayerGetsHit
+      guid: 135a1db34d518442868700d546978d0e
+      id: 1188897697
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_PlayerGetsHit
+        ObjectType: 3
+        guid: 135a1db34d518442868700d546978d0e
+      Path: Events\Default Work Unit\Play_SFX_PlayerGetsHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_spell_cast
       guid: 66c90d48910b7d4184737f9535da1a17
       id: 2340775150
@@ -263,6 +331,74 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7c3b15482a5a884e9c88e84c080999ac
       Path: Events\Default Work Unit\Play_SFX_spell_cast_randomContainer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_spell_charging
+      guid: feb3647b8fd7b24fb75d0f315b12025a
+      id: 303628970
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_spell_charging
+        ObjectType: 3
+        guid: feb3647b8fd7b24fb75d0f315b12025a
+      Path: Events\Default Work Unit\Play_SFX_spell_charging
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_UI_back
+      guid: d49df661da4a9d46832b6d73813d3ea9
+      id: 1117141914
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_UI_back
+        ObjectType: 3
+        guid: d49df661da4a9d46832b6d73813d3ea9
+      Path: Events\Default Work Unit\Play_SFX_UI_back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_UI_browse
+      guid: 794d7691fe55514a9170d31c2d6b7a8c
+      id: 2808440905
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_UI_browse
+        ObjectType: 3
+        guid: 794d7691fe55514a9170d31c2d6b7a8c
+      Path: Events\Default Work Unit\Play_SFX_UI_browse
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_UI_Select
+      guid: 7aa95563d9172b48acf9b41340edcb70
+      id: 2484137795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_SFX_UI_Select
+        ObjectType: 3
+        guid: 7aa95563d9172b48acf9b41340edcb70
+      Path: Events\Default Work Unit\Play_SFX_UI_Select
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

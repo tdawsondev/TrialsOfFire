@@ -69,12 +69,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Dragon_Growl" ID="{4F7F3863-EA9A-429E-8C48-AF82281568FE}">
+				<Event Name="Play_Dragon_Roar" ID="{4F7F3863-EA9A-429E-8C48-AF82281568FE}">
 					<ChildrenList>
 						<Action Name="" ID="{579AC678-74D3-4C0F-8765-7AD3D79BEE39}" ShortID="1001702191">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Dragon_Growl" ID="{36BFEF22-19D8-475C-9B8B-680DAA59E0B6}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+									<ObjectRef Name="Dragon_Roar" ID="{36BFEF22-19D8-475C-9B8B-680DAA59E0B6}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -152,6 +152,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_UI_Select" ID="{CB863BA2-1679-46D0-8607-D890B568F457}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_dragonWingRight" ID="{31BBC535-AD67-4EBB-8670-10610F53570D}">
+					<ChildrenList>
+						<Action Name="" ID="{7BB8B850-940C-493E-B5F4-FAF5C820E780}" ShortID="678778909">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dragonWingRight" ID="{9A8E54CA-1D5C-493A-A2B8-4C59EF4A935B}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_dragonWingLeft" ID="{37713505-405A-4940-9696-E52C20F9DC4B}">
+					<ChildrenList>
+						<Action Name="" ID="{2E1BDC02-54A1-4083-9783-6F012C1D37BB}" ShortID="651962851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dragonWingLeft" ID="{26A1AA6A-F7E4-4BB6-863C-CF5D2ADA3780}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

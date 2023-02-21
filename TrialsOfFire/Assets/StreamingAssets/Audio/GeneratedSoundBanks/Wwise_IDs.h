@@ -14,7 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_COMBAT_PLAYLIST = 1139882387U;
-        static const AkUniqueID PLAY_DRAGON_GROWL = 1807493041U;
+        static const AkUniqueID PLAY_DRAGON_ROAR = 2084793062U;
+        static const AkUniqueID PLAY_DRAGONWINGLEFT = 1260596673U;
+        static const AkUniqueID PLAY_DRAGONWINGRIGHT = 2607860660U;
         static const AkUniqueID PLAY_EXPLORE_PLAYLIST = 3158438924U;
         static const AkUniqueID PLAY_FOOTSTEPS_RANDOM = 2545938451U;
         static const AkUniqueID PLAY_LIGHT_FIRE = 1039124969U;
