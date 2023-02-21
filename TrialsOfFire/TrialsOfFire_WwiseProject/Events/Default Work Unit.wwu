@@ -179,6 +179,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_dragonFlyUp" ID="{79BCE0C8-9D4F-443E-9969-0EAC57B87FCB}">
+					<ChildrenList>
+						<Action Name="" ID="{258845B2-414C-4B5E-99B0-E262F5E70734}" ShortID="855682655">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dragonFlyUp" ID="{EE546E6E-8ECD-4D06-9742-8A1AEDE7F021}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_dragonFlyUp_01" ID="{FE37390F-CD2E-469C-A828-559C73466F52}">
+					<ChildrenList>
+						<Action Name="" ID="{679066AB-545A-490A-929B-D0D7330601B3}" ShortID="911127213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dragonFlyUp" ID="{EE546E6E-8ECD-4D06-9742-8A1AEDE7F021}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tutorial_Playlist" ID="{C6E4F511-8C82-4AEB-A460-FA074AFA01B1}">
+					<ChildrenList>
+						<Action Name="" ID="{90E6AFA7-ED90-481F-94BE-51A50B350540}" ShortID="459539777">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tutorial Playlist" ID="{8652C87A-B38F-409F-B634-A9A26592FD5C}" WorkUnitID="{CFADE78D-6285-43AA-ACCC-CEE192CD8615}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -11,6 +11,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Environmental" ID="{398B7856-2828-4515-924F-90863A9B0DDB}">
+							<ChildrenList>
+								<AuxBus Name="EnviromentalAuxBus" ID="{1A300A21-C47B-4467-B9F3-72B72BFADA58}"/>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
@@ -52,6 +55,9 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}">
+							<ChildrenList>
+								<AuxBus Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}"/>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>

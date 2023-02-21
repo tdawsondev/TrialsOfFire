@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{27759454-63C3-3FF0-A678-E82EBA75A5B2}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{74954F4B-707E-C542-065F-573494D9E6B0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -23,13 +23,17 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="953173477" Name="EnviromentalAuxBus"/>
+				<AuxBus Id="2399040806" Name="MusicAuxBus"/>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume"/>
 				<GameParameter Id="2346531308" Name="MusicVolume"/>
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{C163C13E-00D8-6ACA-347C-D0F0D5B114F6}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{6CA55BCE-8259-0798-CD7C-EFE27CA4609A}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
@@ -104,6 +108,10 @@
 				<File Id="442787193" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_back.wav</ShortName>
 					<CachePath>SFX/SFX_UI_back_10C4C929.wem</CachePath>
+				</File>
+				<File Id="468590362" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dragonFlyUp.wav</ShortName>
+					<CachePath>SFX/dragonFlyUp_10C4C929.wem</CachePath>
 				</File>
 				<File Id="476013138" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dragon_grown_2.wav</ShortName>
@@ -218,6 +226,9 @@
 							<PluginRef Id="3442768367"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2399040806" Name="MusicAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2084793062" Name="Play_Dragon_Roar" DurationType="OneShot" DurationMin="2.441542" DurationMax="5.2158604">
 					<MediaRefs>
@@ -225,6 +236,17 @@
 						<MediaRef Id="476013138"/>
 						<MediaRef Id="775112491"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4214097601" Name="Play_dragonFlyUp" DurationType="OneShot" DurationMin="1.478875" DurationMax="1.478875">
+					<MediaRefs>
+						<MediaRef Id="468590362"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1260596673" Name="Play_dragonWingLeft" DurationType="OneShot" DurationMin="0.6860833" DurationMax="0.84508336">
 					<MediaRefs>
@@ -233,6 +255,9 @@
 						<MediaRef Id="697117672"/>
 						<MediaRef Id="773941578"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2607860660" Name="Play_dragonWingRight" DurationType="OneShot" DurationMin="0.79227084" DurationMax="1.0563542">
 					<MediaRefs>
@@ -241,6 +266,9 @@
 						<MediaRef Id="316997235"/>
 						<MediaRef Id="648218639"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3158438924" Name="Play_Explore_Playlist" DurationType="Infinite">
 					<MediaRefs>
@@ -255,6 +283,9 @@
 							<PluginRef Id="3164629247"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2399040806" Name="MusicAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2545938451" Name="Play_Footsteps_random" DurationType="OneShot" DurationMin="0.42253968" DurationMax="0.42253968">
 					<MediaRefs>
@@ -265,26 +296,41 @@
 						<MediaRef Id="599553398"/>
 						<MediaRef Id="1018981790"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1039124969" Name="Play_light_fire" DurationType="OneShot" DurationMin="4.048254" DurationMax="4.048254">
 					<MediaRefs>
 						<MediaRef Id="712757521"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3118224692" Name="Play_Menu_Music_Playlist" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="636407208"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2399040806" Name="MusicAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="363031598" Name="Play_SFX_GameOver" DurationType="OneShot" DurationMin="3.327483" DurationMax="3.327483">
 					<MediaRefs>
 						<MediaRef Id="433595703"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1188897697" Name="Play_SFX_PlayerGetsHit" DurationType="OneShot" DurationMin="1.3732426" DurationMax="1.3732426">
 					<MediaRefs>
 						<MediaRef Id="708754026"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3300599549" Name="Play_SFX_spell_cast_randomContainer" DurationType="OneShot" DurationMin="1.0333679" DurationMax="1.0338823">
 					<MediaRefs>
@@ -292,29 +338,61 @@
 						<MediaRef Id="214820739"/>
 						<MediaRef Id="730421286"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="303628970" Name="Play_SFX_spell_charging" DurationType="OneShot" DurationMin="3.5915647" DurationMax="3.5915647">
 					<MediaRefs>
 						<MediaRef Id="353118610"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1117141914" Name="Play_SFX_UI_back" DurationType="OneShot" DurationMin="0.42253968" DurationMax="0.42253968">
 					<MediaRefs>
 						<MediaRef Id="442787193"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2808440905" Name="Play_SFX_UI_browse" DurationType="OneShot" DurationMin="0.6953515" DurationMax="0.6953515">
 					<MediaRefs>
 						<MediaRef Id="77786782"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2484137795" Name="Play_SFX_UI_Select" DurationType="OneShot" DurationMin="0.7394331" DurationMax="0.7394331">
 					<MediaRefs>
 						<MediaRef Id="836741324"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4256373713" Name="Play_Tutorial_Playlist" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="6346227"/>
+						<MediaRef Id="407614234"/>
+						<MediaRef Id="514870237"/>
+						<MediaRef Id="741307772"/>
+						<MediaRef Id="790201985"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3164629247"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2399040806" Name="MusicAuxBus"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{560BE88B-D200-EB83-10B9-CB6779FD3E63}</FileHash>
+	<FileHash>{E74D0B3D-F461-93AB-4071-C60D3CF9906F}</FileHash>
 </SoundBanksInfo>

@@ -10,13 +10,14 @@
 						<ObjectRef Name="Play_Dragon_Roar" ID="{4F7F3863-EA9A-429E-8C48-AF82281568FE}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Explore_Playlist" ID="{6BE1A544-C771-42C4-978B-514FF8E2796A}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Combat_Playlist" ID="{B591CCCC-0E84-42EB-BDA6-DC53461A009E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_dragonFlyUp" ID="{79BCE0C8-9D4F-443E-9969-0EAC57B87FCB}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_UI_back" ID="{61F69DD4-4ADA-469D-832B-6D73813D3EA9}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Dragon_Roar" ID="{36BFEF22-19D8-475C-9B8B-680DAA59E0B6}" WorkUnitID="{A3032ADF-5A77-4F3C-A2AA-6DE1ABDA2867}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_light_fire" ID="{4106A305-6DAA-4783-A933-228EFD95F016}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_UI_Select" ID="{6355A97A-17D9-482B-ACF9-B41340EDCB70}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_dragonWingLeft" ID="{37713505-405A-4940-9696-E52C20F9DC4B}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_UI_browse" ID="{91764D79-55FE-4A51-9170-D31C2D6B7A8C}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_random" ID="{7C1CA5E4-E2DA-4AE4-99E3-B22043B60D3E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Tutorial_Playlist" ID="{C6E4F511-8C82-4AEB-A460-FA074AFA01B1}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Menu_Music_Playlist" ID="{E3ED4EE3-C354-4BCA-9275-25EC3F98731C}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_spell_cast_randomContainer" ID="{48153B7C-5A2A-4E88-9C88-E84C080999AC}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_dragonWingRight" ID="{31BBC535-AD67-4EBB-8670-10610F53570D}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}" Origin="Manual" Filter="7"/>

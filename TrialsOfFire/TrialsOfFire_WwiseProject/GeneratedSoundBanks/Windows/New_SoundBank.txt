@@ -14,6 +14,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3118224692	Play_Menu_Music_Playlist			\Default Work Unit\Play_Menu_Music_Playlist	
 	3158438924	Play_Explore_Playlist			\Default Work Unit\Play_Explore_Playlist	
 	3300599549	Play_SFX_spell_cast_randomContainer			\Default Work Unit\Play_SFX_spell_cast_randomContainer	
+	4214097601	Play_dragonFlyUp			\Default Work Unit\Play_dragonFlyUp	
+	4256373713	Play_Tutorial_Playlist			\Default Work Unit\Play_Tutorial_Playlist	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1416967478	All_Buttons_IN	Wwise Compressor			
@@ -39,6 +41,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	407614234	188 Emotional Stack STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\188 Emotional Stack STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\188 Emotional Stack STEM		7275888
 	433595703	SFX_GameOver	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\SFX_GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_GameOver		587064
 	442787193	SFX_UI_back	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\SFX_UI_back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_UI_back		74632
+	468590362	dragonFlyUp	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\dragonFlyUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\dragonFlyUp		284040
 	476013138	dragon_grown_2	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\dragon_grown_2_02B24A68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon_Roar\dragon_grown_2		558460
 	514870237	184 Strings STEM	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\Explore\184 Strings STEM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Explore Playlist\Explore\184 Strings STEM		7275888
 	560081505	footstep_1	X:\Games\TrialsOfFire\TrialsOfFire\TrialsOfFire_WwiseProject\.cache\Windows\SFX\footsteps\footstep_1_3DDB8E0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_random\footsteps\footstep_1		524384
