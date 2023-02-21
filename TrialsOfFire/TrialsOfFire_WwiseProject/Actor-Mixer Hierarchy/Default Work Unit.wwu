@@ -458,6 +458,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SFX_UI_Select" ID="{CB863BA2-1679-46D0-8607-D890B568F457}" ShortID="624307304">
+					<PropertyList>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{51DA7E75-EF39-4762-9C9E-3E736217F3EC}"/>
@@ -470,19 +477,34 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="SFX_UI_Select" ID="{80FBE78D-4518-47BA-9E6F-8EB084DC9518}">
+						<AudioFileSource Name="SFX_UI_Select" ID="{EB0A5D39-33E9-4774-8DAA-7D7C9D029711}">
+							<Comment>Yo! I made some new UI's
+- Fidel Delgado</Comment>
 							<Language>SFX</Language>
-							<AudioFile>SFX_UI_Select.wav</AudioFile>
+							<AudioFile>uiSelect.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="836741324"/>
+								<MediaID ID="88592453"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SFX_UI_Select" ID="{80FBE78D-4518-47BA-9E6F-8EB084DC9518}" Platform="Linked"/>
+						<ActiveSource Name="SFX_UI_Select" ID="{EB0A5D39-33E9-4774-8DAA-7D7C9D029711}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SFX_UI_browse" ID="{00FB4190-5FFA-4377-B2FD-417691708119}" ShortID="508032239">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CA43238E-FC46-4903-BE47-448FA37D0BAB}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{51DA7E75-EF39-4762-9C9E-3E736217F3EC}"/>
@@ -495,16 +517,22 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="SFX_UI_browse" ID="{66A3BCC3-7132-4D7A-844A-E33155B4B134}">
+						<AudioFileSource Name="SFX_UI_browse" ID="{ED5E0659-9C9D-4EEE-8F50-FB5FF260EFDF}">
+							<Comment>Yo! I made some new UI's
+- Fidel Delgado</Comment>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>SFX_UI_browse.wav</AudioFile>
+							<AudioFile>uiHover.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="77786782"/>
+								<MediaID ID="209831597"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SFX_UI_browse" ID="{66A3BCC3-7132-4D7A-844A-E33155B4B134}" Platform="Linked"/>
+						<ActiveSource Name="SFX_UI_browse" ID="{ED5E0659-9C9D-4EEE-8F50-FB5FF260EFDF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SFX_GameOver" ID="{135EEFAA-697D-4516-AE95-D4D21FAED1C9}" ShortID="60066351">
