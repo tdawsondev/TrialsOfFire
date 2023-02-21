@@ -56,6 +56,7 @@ namespace AK
     {
         static const AkUniqueID ENVIROMENTALAUXBUS = 953173477U;
         static const AkUniqueID MUSICAUXBUS = 2399040806U;
+        static const AkUniqueID ROOMVERBBUS = 1212331467U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

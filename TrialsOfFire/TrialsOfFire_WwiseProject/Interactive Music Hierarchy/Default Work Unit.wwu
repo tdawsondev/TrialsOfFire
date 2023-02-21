@@ -14,9 +14,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Combat Main" ID="{A1DC2FBA-02C1-4BD1-838C-8509C861ABAD}" ShortID="1070901670">
@@ -1985,9 +1982,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicSegment Name="Menu Music" ID="{59D963DD-07DC-489F-B2F5-F79326A1ABE2}" ShortID="472276807">
@@ -2257,9 +2251,6 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3371,9 +3362,6 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}" WorkUnitID="{C9DCDA1E-C425-4CFB-8BF2-675418051472}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -10,7 +10,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	953173477	EnviromentalAuxBus			\Default Work Unit\Master Audio Bus\Environmental\EnviromentalAuxBus	
+	1212331467	RoomVerbBus			\Default Work Unit\Master Audio Bus\Environmental\EnviromentalAuxBus\RoomVerbBus	
 	2399040806	MusicAuxBus			\Default Work Unit\Master Audio Bus\Music\MusicAuxBus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2038996943	Plate_Sizzle	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

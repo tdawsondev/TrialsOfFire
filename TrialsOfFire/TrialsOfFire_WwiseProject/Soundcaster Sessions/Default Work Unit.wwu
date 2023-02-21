@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E7C1F971-A94E-40E9-AEA6-535F295DF0E9}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{E7C1F971-A94E-40E9-AEA6-535F295DF0E9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E7C1F971-A94E-40E9-AEA6-535F295DF0E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{7586AEA9-FAC4-4CB4-94AC-E8248694B545}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_SFX_spell_cast_randomContainer" ID="{48153B7C-5A2A-4E88-9C88-E84C080999AC}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_dragonWingLeft" ID="{37713505-405A-4940-9696-E52C20F9DC4B}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_dragonWingRight" ID="{31BBC535-AD67-4EBB-8670-10610F53570D}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Footsteps_random" ID="{7C1CA5E4-E2DA-4AE4-99E3-B22043B60D3E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Combat_Playlist" ID="{B591CCCC-0E84-42EB-BDA6-DC53461A009E}" WorkUnitID="{3AA2AB9C-ACD7-46F0-85DE-EAD09AD7B08E}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

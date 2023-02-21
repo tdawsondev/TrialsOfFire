@@ -9,10 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{74954F4B-707E-C542-065F-573494D9E6B0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{365C4B5F-B1DE-965E-7BF7-73B1E3EF731E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="2038996943" Name="Plate_Sizzle" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -25,7 +28,21 @@
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="953173477" Name="EnviromentalAuxBus"/>
-				<AuxBus Id="2399040806" Name="MusicAuxBus"/>
+				<AuxBus Id="1212331467" Name="RoomVerbBus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2038996943"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
+				</AuxBus>
+				<AuxBus Id="2399040806" Name="MusicAuxBus">
+					<AuxBusRefs>
+						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+					</AuxBusRefs>
+				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume"/>
@@ -33,7 +50,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{6CA55BCE-8259-0798-CD7C-EFE27CA4609A}">
+		<SoundBank Id="4072029455" Type="User" Language="SFX" Hash="{BD237985-2CB9-B5C3-A051-C16B851A35BF}">
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<Media>
@@ -43,7 +60,7 @@
 				</File>
 				<File Id="15033305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_4.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_4_F110C659.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_4_1A1DA218.wem</CachePath>
 				</File>
 				<File Id="19289574" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>leftWing_4.wav</ShortName>
@@ -53,13 +70,13 @@
 					<ShortName>Combat\181 Woodwinds STEM.wav</ShortName>
 					<CachePath>SFX/Combat/181 Woodwinds STEM_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="77786782" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_UI_browse.wav</ShortName>
-					<CachePath>SFX/SFX_UI_browse_10C4C929.wem</CachePath>
-				</File>
 				<File Id="84612645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_5.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_5_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="88592453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>uiSelect.wav</ShortName>
+					<CachePath>SFX/uiSelect_10C4C929.wem</CachePath>
 				</File>
 				<File Id="90239557" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rightWing_1.wav</ShortName>
@@ -67,11 +84,15 @@
 				</File>
 				<File Id="174776349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_4.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_4_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="209831597" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>uiHover.wav</ShortName>
+					<CachePath>SFX/uiHover_10C4C929.wem</CachePath>
 				</File>
 				<File Id="214820739" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_2.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_2_E07B5596.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_2_9EF3ABDF.wem</CachePath>
 				</File>
 				<File Id="223839823" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rightWing_4.wav</ShortName>
@@ -81,17 +102,21 @@
 					<ShortName>dragon_grown_3.wav</ShortName>
 					<CachePath>SFX/dragon_grown_3_BB3D636D.wem</CachePath>
 				</File>
+				<File Id="285943488" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>uiBack.wav</ShortName>
+					<CachePath>SFX/uiBack_10C4C929.wem</CachePath>
+				</File>
 				<File Id="316997235" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rightWing_2.wav</ShortName>
 					<CachePath>SFX/rightWing_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="353118610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_spell_charging.wav</ShortName>
-					<CachePath>SFX/SFX_spell_charging_10C4C929.wem</CachePath>
+					<CachePath>SFX/SFX_spell_charging_57E4600F.wem</CachePath>
 				</File>
 				<File Id="367317632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_6.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_6_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_6_10C4C929.wem</CachePath>
 				</File>
 				<File Id="385204008" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\180 Drums intense STEM.wav</ShortName>
@@ -104,10 +129,6 @@
 				<File Id="433595703" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_GameOver.wav</ShortName>
 					<CachePath>SFX/SFX_GameOver_10C4C929.wem</CachePath>
-				</File>
-				<File Id="442787193" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_UI_back.wav</ShortName>
-					<CachePath>SFX/SFX_UI_back_10C4C929.wem</CachePath>
 				</File>
 				<File Id="468590362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dragonFlyUp.wav</ShortName>
@@ -123,7 +144,7 @@
 				</File>
 				<File Id="560081505" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_1.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_1_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="590483039" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>leftWing_1.wav</ShortName>
@@ -131,7 +152,7 @@
 				</File>
 				<File Id="599553398" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_3.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_3_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_3_10C4C929.wem</CachePath>
 				</File>
 				<File Id="636407208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>190 Menu Music STEM 152 bpm.wav</ShortName>
@@ -159,7 +180,7 @@
 				</File>
 				<File Id="730421286" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fire Ball Spell_1.wav</ShortName>
-					<CachePath>SFX/Fire Ball Spell_1_06B16A93.wem</CachePath>
+					<CachePath>SFX/Fire Ball Spell_1_37FEBF96.wem</CachePath>
 				</File>
 				<File Id="741307772" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\189 MOOG LEAD STEM.wav</ShortName>
@@ -176,10 +197,6 @@
 				<File Id="790201985" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explore\186 Choir STEM.wav</ShortName>
 					<CachePath>SFX/Explore/186 Choir STEM_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="836741324" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_UI_Select.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Select_10C4C929.wem</CachePath>
 				</File>
 				<File Id="849014329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Combat\182 Strings STEM.wav</ShortName>
@@ -199,7 +216,7 @@
 				</File>
 				<File Id="1018981790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footsteps\footstep_2.wav</ShortName>
-					<CachePath>SFX/footsteps/footstep_2_3DDB8E0C.wem</CachePath>
+					<CachePath>SFX/footsteps/footstep_2_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -230,14 +247,14 @@
 						<AuxBusRef Id="2399040806" Name="MusicAuxBus"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2084793062" Name="Play_Dragon_Roar" DurationType="OneShot" DurationMin="2.441542" DurationMax="5.2158604">
+				<Event Id="2084793062" Name="Play_Dragon_Roar" DurationType="OneShot" DurationMin="2.2649186" DurationMax="5.2158604">
 					<MediaRefs>
 						<MediaRef Id="266605098"/>
 						<MediaRef Id="476013138"/>
 						<MediaRef Id="775112491"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="4214097601" Name="Play_dragonFlyUp" DurationType="OneShot" DurationMin="1.478875" DurationMax="1.478875">
@@ -246,6 +263,7 @@
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="1260596673" Name="Play_dragonWingLeft" DurationType="OneShot" DurationMin="0.6860833" DurationMax="0.84508336">
@@ -256,7 +274,7 @@
 						<MediaRef Id="773941578"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="2607860660" Name="Play_dragonWingRight" DurationType="OneShot" DurationMin="0.79227084" DurationMax="1.0563542">
@@ -267,7 +285,7 @@
 						<MediaRef Id="648218639"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="3158438924" Name="Play_Explore_Playlist" DurationType="Infinite">
@@ -297,7 +315,7 @@
 						<MediaRef Id="1018981790"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
 				<Event Id="1039124969" Name="Play_light_fire" DurationType="OneShot" DurationMin="4.048254" DurationMax="4.048254">
@@ -339,10 +357,10 @@
 						<MediaRef Id="730421286"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
+						<AuxBusRef Id="1212331467" Name="RoomVerbBus"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="303628970" Name="Play_SFX_spell_charging" DurationType="OneShot" DurationMin="3.5915647" DurationMax="3.5915647">
+				<Event Id="303628970" Name="Play_SFX_spell_charging" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="353118610"/>
 					</MediaRefs>
@@ -350,25 +368,25 @@
 						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1117141914" Name="Play_SFX_UI_back" DurationType="OneShot" DurationMin="0.42253968" DurationMax="0.42253968">
+				<Event Id="1117141914" Name="Play_SFX_UI_back" DurationType="OneShot" DurationMin="0.7394375" DurationMax="0.7394375">
 					<MediaRefs>
-						<MediaRef Id="442787193"/>
+						<MediaRef Id="285943488"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2808440905" Name="Play_SFX_UI_browse" DurationType="OneShot" DurationMin="0.6953515" DurationMax="0.6953515">
+				<Event Id="2808440905" Name="Play_SFX_UI_browse" DurationType="OneShot" DurationMin="0.9507083" DurationMax="0.9507083">
 					<MediaRefs>
-						<MediaRef Id="77786782"/>
+						<MediaRef Id="209831597"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2484137795" Name="Play_SFX_UI_Select" DurationType="OneShot" DurationMin="0.7394331" DurationMax="0.7394331">
+				<Event Id="2484137795" Name="Play_SFX_UI_Select" DurationType="OneShot" DurationMin="2.2711458" DurationMax="2.2711458">
 					<MediaRefs>
-						<MediaRef Id="836741324"/>
+						<MediaRef Id="88592453"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="953173477" Name="EnviromentalAuxBus"/>
@@ -394,5 +412,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E74D0B3D-F461-93AB-4071-C60D3CF9906F}</FileHash>
+	<FileHash>{751ABC9F-2C14-0316-A633-8AD67D90181B}</FileHash>
 </SoundBanksInfo>

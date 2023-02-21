@@ -12,7 +12,13 @@
 					<ChildrenList>
 						<Bus Name="Environmental" ID="{398B7856-2828-4515-924F-90863A9B0DDB}">
 							<ChildrenList>
-								<AuxBus Name="EnviromentalAuxBus" ID="{1A300A21-C47B-4467-B9F3-72B72BFADA58}"/>
+								<AuxBus Name="RoomVerbBus" ID="{457CC9A9-C0D8-41CC-A5C2-D680E25CD890}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Plate_Sizzle" ID="{D4A5BBF1-6A59-47A7-BB97-E7695900B72F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -53,11 +59,26 @@
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}"/>
+									<DuckingParam>
+										<Volume>-1.70000004768372</Volume>
+										<FadeInTime>0.300000011920929</FadeInTime>
+										<FadeOutTime>0.300000011920929</FadeOutTime>
+										<FadeCurve>FadeExp2</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 						<Bus Name="Music" ID="{12DE7F2B-B60F-4245-B9F9-1C737A3CF791}">
-							<ChildrenList>
-								<AuxBus Name="MusicAuxBus" ID="{81ABE1FC-DA0D-4614-828A-F55569D81A71}"/>
-							</ChildrenList>
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
