@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1edadcc925c4fb4c8bf2675418051472
     GuidInternal: 
-    m_lastTime: -8585246117149134877
+    m_lastTime: -8585245850591797440
     List:
     - name: Environmental
       guid: 56788b3928281545924f90863a9b0ddb
@@ -88,6 +88,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 2b7fde120fb64542b9f91c737a3cf791
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: RoomVerbBus
+      guid: a9c97c45d8c0cc41a5c2d680e25cd890
+      id: 1212331467
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1edadcc925c4fb4c8bf2675418051472
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Environmental
+        ObjectType: 2
+        guid: 56788b3928281545924f90863a9b0ddb
+      - ElementName: RoomVerbBus
+        ObjectType: 1
+        guid: a9c97c45d8c0cc41a5c2d680e25cd890
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environmental\RoomVerbBus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -100,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 80f0961343b1c44e800d62cd736ae70b
     GuidInternal: 
-    m_lastTime: -8585246088241561525
+    m_lastTime: -8585246049206939723
     List:
     - name: New_SoundBank
       guid: dd52f5b6b6a5cd48adda31fa2bd70bc1
@@ -128,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9caba23ad7acf04685deead09ad7b08e
     GuidInternal: 
-    m_lastTime: -8585246088241686709
+    m_lastTime: -8585245853527298409
     List:
     - name: Play_Combat_Playlist
       guid: cccc91b5840eeb42bda6dc53461a009e
@@ -161,6 +181,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 63387f4f9aea9e428c48af82281568fe
       Path: Events\Default Work Unit\Play_Dragon_Roar
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_dragonFlyUp
+      guid: c8e0bc794f9d3e4499690eac57b87fcb
+      id: 4214097601
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_dragonFlyUp
+        ObjectType: 3
+        guid: c8e0bc794f9d3e4499690eac57b87fcb
+      Path: Events\Default Work Unit\Play_dragonFlyUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_dragonFlyUp_01
+      guid: 0f3937fe2ecd9c46a828559c73466f52
+      id: 4192919821
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_dragonFlyUp_01
+        ObjectType: 3
+        guid: 0f3937fe2ecd9c46a828559c73466f52
+      Path: Events\Default Work Unit\Play_dragonFlyUp_01
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -300,23 +354,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX_spell_cast
-      guid: 66c90d48910b7d4184737f9535da1a17
-      id: 2340775150
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 9caba23ad7acf04685deead09ad7b08e
-      - ElementName: Play_SFX_spell_cast
-        ObjectType: 3
-        guid: 66c90d48910b7d4184737f9535da1a17
-      Path: Events\Default Work Unit\Play_SFX_spell_cast
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_SFX_spell_cast_randomContainer
       guid: 7c3b15482a5a884e9c88e84c080999ac
       id: 3300599549
@@ -399,6 +436,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7aa95563d9172b48acf9b41340edcb70
       Path: Events\Default Work Unit\Play_SFX_UI_Select
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Tutorial_Playlist
+      guid: 11f5e4c6828ceb4aa460fa074afa01b1
+      id: 4256373713
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9caba23ad7acf04685deead09ad7b08e
+      - ElementName: Play_Tutorial_Playlist
+        ObjectType: 3
+        guid: 11f5e4c6828ceb4aa460fa074afa01b1
+      Path: Events\Default Work Unit\Play_Tutorial_Playlist
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
